@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BESPOKE SERVICE</title>
+	<link href="bs/css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default" id="menu">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" style="height: 40px;"/>
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+			<ul class="nav navbar-nav navbar-right" style="text-transform: uppercase;margin-top: 9px;">
+				<li><a href="HOME.html">home</a></li>
+				<li><a href="ABOUT.html">about</a></li>
+				<li><a href="#">blog </a></li>
+				<li><a href="BESPOKESERVICE.html">bespoke service</a></li>
+				<li><a href="CAREER.html">career</a></li>
+				<li><a href="CONTACT.html">contact</a></li>
+				<li><a href="WEBAPP.html">web app</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<!-- /.container -->
+
+<div class="jumbotron" id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<h1>Lets Gaigai!</h1>
+				<p>
+					Gaigai is our offline dating service. Custom tailored to your
+					needs,we'll make sure to find you the match of your dreams</p>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-4">
+			<button type="button" class="btn btn-default" style="margin-top: 40px;width: 100%;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400;border: 2px solid #46c8a8; color:#46c8a8;">TRY GAIGAI</button>
+		</div>
+		<div class="col-md-6"></div>
+	</div>
+	</div>
+</div>
+
+
+<div style="background: #705eb6;" id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center" style="color: white;">
+				<div class=" img-wrap" style="padding: 30px;border-bottom: white solid 1px;">
+					<img src="img/Mail.png" alt=""/>
+					<img src="img/Facebook.png" alt=""/>
+					<img src="img/Twitter.png" alt=""/>
+					<img src="img/Youtube.png" alt=""/>
+				</div>
+				<div style="padding: 30px;">
+					<a style="color:white;" href="#">DROWNLOAD THE APP</a>
+					<a style="color:white;margin-left: 30px;" href="#">CONTACT US</a>
+				</div>
+				<div style="padding-bottom: 40px;">
+					© Paktor Pte. Ltd. All Rights Reserved.  |  <a style="color:white;" href="#">Terms and conditions</a>  |  <a style="color:white;" href="#">Privacy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+ adjust = function(){
+  height = window.innerHeight - document.getElementById('menu').getBoundingClientRect().height - document.getElementById('footer').getBoundingClientRect().height;
+  if(height>document.getElementById('content').getBoundingClientRect().height){
+   document.getElementById('content').style.height = height + 'px';
+  }
+ }
+ window.onload = adjust;
+ window.onresize = adjust;
+</script>
+</body>
+</html>
