@@ -9,7 +9,7 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="menu">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -41,12 +41,12 @@
 </nav>
 <!-- /.container -->
 
-<div class="jumbotron">
+<div class="jumbotron" id="content">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-				<h1 style="font-size:60px;" >Why, how and where.</h1>
+				<h1 style="font-size:60px; padding-top:150px;" >Why, how and where.</h1>
 				<p style="padding-top:20px; font-size:25px; font-family:Brandon Text;">
 					Learn more about why and how we created Paktor, see our
 					core values and where is our biggest target reach.</p>
@@ -55,7 +55,7 @@
 		</div>
 	</div>
 </div>
-<div style="background: #dadbe1;" class="hidden-xs">
+<div style="background: #dadbe1;" class="hidden-xs" id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -83,7 +83,7 @@
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container" id="content2">
 	<div class="row">
 		<div class="col-md-12">
 			<h1 class="text-center" style=" font-size:60px;font-style: italic;font-weight: bold;padding: 35px 0 50px 0;">Why Paktor?</h1>
@@ -94,7 +94,7 @@
 		</div>
 	</div>
 </div>
-<div style="background: #f0f1f7;padding-bottom: 60px;">
+<div style="background: #f0f1f7;padding-bottom: 60px;" id="content3">
 	<div class="container" style="background-color:#f0f1f7;">
 	<div class="row">
 		<div class="col-md-12">
@@ -160,6 +160,17 @@
 		</div>
 	</div>
 </div>
-
+<script>
+ adjust = function(){
+  height = window.innerHeight - document.getElementById('menu').getBoundingClientRect().height - document.getElementById('footer').getBoundingClientRect().height;
+  if(height>document.getElementById('content').getBoundingClientRect().height){
+   document.getElementById('content').style.height = height + 'px';
+   document.getElementById('content2').style.height = height + 'px';
+    document.getElementById('content3').style.height = height + 'px';
+  }
+ }
+ window.onload = adjust;
+ window.onresize = adjust;
+</script>
 </body>
 </html>
