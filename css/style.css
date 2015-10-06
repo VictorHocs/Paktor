@@ -28,7 +28,7 @@
 .jumbotron .h1 {
     font-size: 50px;
     font-style: italic;
-	
+
 }
 .carousel-indicators li {
     border: 1px solid #49e1b7;
@@ -51,4 +51,15 @@ h2
 { font-family:"Aver";
 font-style: italic;
 font-weight: bold;
+}
+
+.carousel-inner > .item > .say{
+  color: white;
+  height: 430px;
+  background: #38373b;
+  text-align: center;
+}
+
+.carousel-inner > .item > .say h2{
+  margin: 0;padding: 30px;
 }
