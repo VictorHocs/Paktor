@@ -9,7 +9,7 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="menu">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -43,7 +43,7 @@
 </nav>
 <!-- /.container -->
 
-<div class="jumbotron">
+<div class="jumbotron" id="content">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2"></div>
@@ -64,13 +64,13 @@
 			</div>
 			<div class="col-md-5">
 				<h3 style="color:#46c8a8;">SUPPORT</h3>
-				<p>help@gopaktor.com</p>
+				<p style="font-family:Brandon Text;">help@gopaktor.com</p>
 				<h3 style="color:#46c8a8; ">PARTNERSHIPS</h3>
-				<p>partners@gopaktor.com</p>
+				<p style="font-family:Brandon Text;">partners@gopaktor.com</p>
 				<h3 style="color:#46c8a8;">COMMENTS AND IDEAS</h3>
-				<p>help@gopaktor.com</p>
+				<p style="font-family:Brandon Text;">help@gopaktor.com</p>
 				<h3 style="color:#46c8a8;">PRESS</h3>
-				<p>partners@gopaktor.com</p>
+				<p style="font-family:Brandon Text;">partners@gopaktor.com</p>
 			</div>	
 		</div>
 		<div class="row">
@@ -86,7 +86,7 @@
 </div>
 
 
-<div style="background: #705eb6;">
+<div style="background: #705eb6;" id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center" style="color: white;">
@@ -101,11 +101,21 @@
 					<a style="color:white;margin-left: 30px;" href="#">CONTACT US</a>
 				</div>
 				<div style="padding-bottom: 40px;">
-					© Paktor Pte. Ltd. All Rights Reserved.  |  <a style="color:white;" href="#">Terms and conditions</a>  |  <a style="color:white;" href="#">Privacy</a>
+					© Paktor Pte. Ltd. All Rights Reserved.  |  <a style="color:white;" href="term.html">Terms and conditions</a>  |  <a style="color:white;" href="#">Privacy</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<script>
+ adjust = function(){
+  height = window.innerHeight - document.getElementById('menu').getBoundingClientRect().height - document.getElementById('footer').getBoundingClientRect().height;
+  if(height>document.getElementById('content').getBoundingClientRect().height){
+   document.getElementById('content').style.height = height + 'px';
+  }
+ }
+ window.onload = adjust;
+ window.onresize = adjust;
+</script>
 </body>
 </html>
