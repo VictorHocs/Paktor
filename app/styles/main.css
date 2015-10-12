@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Aver";
+    /*font-family: "Aver";*/
     font-style: italic;
     font-weight: bold;
 }
@@ -68,4 +68,15 @@ h2 {
 .carousel-inner > .item > .say h2 {
     margin: 0;
     padding: 30px;
+}
+
+.list li{
+    font-size: 21px;
+    font-weight: 200;
+    color:#464963; font-family:Brandon Text;
+    margin-bottom: 20px;
+}
+
+.list li img{
+    margin-right: 20px;
 }
