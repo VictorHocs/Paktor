@@ -4,16 +4,16 @@
     border: none;
     border-radius: 0;
     padding-top: 7px;
-    margin-bottom: 0px;
+    margin-bottom:0px;
     background-size: contain;
 }
 .navbar-default .navbar-nav > li > a {
-    font-family: "Brandon Text";
-    font-weight: bold;
+	font-family: "Brandon Text";
+	font-weight: bold;
     color: white;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .focus {
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus {
     color: #46c8a8;
 }
 
@@ -29,42 +29,36 @@
     font-style: italic;
 
 }
-
 .carousel-indicators li {
     border: 1px solid #49e1b7;
     background-color: #727272;
 }
-
-.img-wrap img {
+.img-wrap img{
     margin-left: 40px;
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
     .carousel-indicators {
         bottom: 0px;
     }
 }
-
-h1 {
-    font-family: "Aver";
-    font-style: italic;
-    font-weight: bold;
+h1
+{ font-family:"Aver";
+font-style: italic;
+font-weight: bold;
+}
+h2
+{ font-family:"Aver";
+font-style: italic;
+font-weight: bold;
 }
 
-h2 {
-    font-family: "Aver";
-    font-style: italic;
-    font-weight: bold;
+.carousel-inner > .item > .say{
+  color: white;
+  height: 300px;
+  background: #38373b;
+  text-align: center;
 }
 
-.carousel-inner > .item > .say {
-    color: white;
-    height: 300px;
-    background: #38373b;
-    text-align: center;
-}
-
-.carousel-inner > .item > .say h2 {
-    margin: 0;
-    padding: 30px;
+.carousel-inner > .item > .say h2{
+  margin: 0;padding: 30px;
 }
