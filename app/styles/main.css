@@ -7,13 +7,14 @@
     margin-bottom: 0px;
     background-size: contain;
 }
+
 .navbar-default .navbar-nav > li > a {
     font-family: "Brandon Text";
     font-weight: bold;
     color: white;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a.focus {
     color: #46c8a8;
 }
 
@@ -52,7 +53,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Aver";
+    /*font-family: "Aver";*/
     font-style: italic;
     font-weight: bold;
 }
@@ -67,4 +68,15 @@ h2 {
 .carousel-inner > .item > .say h2 {
     margin: 0;
     padding: 30px;
+}
+
+.list li{
+    font-size: 21px;
+    font-weight: 200;
+    color:#464963; font-family:Brandon Text;
+    margin-bottom: 20px;
+}
+
+.list li img{
+    margin-right: 20px;
 }

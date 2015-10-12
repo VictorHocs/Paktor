@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Paktor</title>
+  <meta name="description" content="Paktor is a popular social community">
+  <meta name="viewport" content="width=device-width">
+  <!-- build:css(app) styles/vendor.css -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+  <!-- endbuild -->
+  <!-- build:css(app) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <link rel="shortcut icon" href="img/favicon.ico"/>
+</head>
+<body ng-app="PaktorApp" debug-scope>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" style="height: 40px;"/>
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" style="text-transform: uppercase;margin-top: 9px;">
+        <li><a ui-sref-active="focus" data-ui-sref="home">Home</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="about">about</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="blog">blog</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="bespoke_service">bespoke service</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="career">career</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="contact">contact</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="web_app">web app</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<ui-view></ui-view>
+
+<div style="background: #705eb6;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center" style="color: white;">
+        <div class=" img-wrap" style="padding: 30px;border-bottom: white solid 1px;">
+          <a href="#"> <img src="img/Mail.png" alt=""/> </a>
+          <a href="#"> <img src="img/Facebook.png" alt=""/> </a>
+          <a href="#"> <img src="img/Twitter.png" alt=""/> </a>
+          <a href="#"> <img src="img/Youtube.png" alt=""/> </a>
+        </div>
+        <div style="padding: 30px;">
+          <a style="color:white;" href="#">DOWNLOAD THE APP</a>
+          <a style="color:white;margin-left: 30px;" href="#">CONTACT US</a>
+        </div>
+        <div style="padding-bottom: 40px;">
+          © Paktor Pte. Ltd. All Rights Reserved.  |  <a style="color:white;" href="term.html">Terms and conditions</a>  |  <a style="color:white;" href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--[if lt IE 9]>
+<script src="vendor/es5-shim/es5-shim.min.js"></script>
+<script src="vendor/json3/lib/json3.min.js"></script>
+<![endif]-->
+<!-- build:js(app) scripts/vendor.js -->
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- endbuild -->
+<!-- build:js(app) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/route.js"></script>
+<!-- endbuild -->
+<script src="scripts/directives/DebugScope.js"></script><!-- TODO need to remove when deploy -->
+</body>
+</html>
