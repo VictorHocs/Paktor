@@ -11,9 +11,9 @@
     }).state('blog', {
       url: '/blog',
       templateUrl: 'view/blog.html'
-    }).state('bespoke_service', {
-      url: '/bespoke_service',
-      templateUrl: 'view/bespoke_service.html'
+    }).state('gaigai', {
+      url: '/gaigai',
+      templateUrl: 'view/gaigai.html'
     }).state('career', {
       url: '/career',
       templateUrl: 'view/career.html'
