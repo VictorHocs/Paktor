@@ -50,11 +50,10 @@ h1 {
     font-family: "Aver";
     font-style: italic;
     font-weight: bold;
-	font-size:60px;
 }
 
 h2 {
-    /*font-family: "Aver";*/
+    font-family: "Aver";
     font-style: italic;
     font-weight: bold;
 }
