@@ -23,6 +23,9 @@
     }).state('web_app', {
       url: '/web_app',
       templateUrl: 'view/web_app.html'
+    }).state('term', {
+      url: '/term',
+      templateUrl: 'view/term.html'
     });
   });
 
