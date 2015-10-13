@@ -73,8 +73,9 @@ h2 {
 .list li{
     font-size: 21px;
     font-weight: 200;
-    color:#464963; font-family:Brandon Text;
     margin-bottom: 20px;
+    color:#838498;
+    font-family:'Brandon Grotesque Regular';
 }
 
 .list li img{
