@@ -20,8 +20,18 @@
         </div>
     </div>
 </div>
-<div class="fullcontainer" >
-    <img src="img/videoBackground.png" class="img-responsive" style="background-size:cover; width:100%" alt="">
+<script type="text/ng-template" id="myModalContent.html">
+    <video style="width: 100%;" controls>
+        <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="text-center">
+        <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove" style="cursor: pointer;"> Close</span>
+    </div>
+</script>
+
+<div class="fullcontainer" ng-controller="ModalVideoCtrl as video">
+    <img ng-click="video.open()" src="img/videoBackground.png" class="img-responsive" style="background-size:cover; width:100%;cursor: pointer;" alt="">
 </div>
 <div class="jumbotron" style="background:white;padding-bottom: 0px;">
     <div class="container">
