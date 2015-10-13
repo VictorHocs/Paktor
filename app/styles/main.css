@@ -86,5 +86,5 @@ h2 {
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default
 {
-	background-color: #3d3f57;color:#46c8a8;
+	background-color: #3d3f57;color:#46c8a8;border: 2px solid #46c8a8;
 }
