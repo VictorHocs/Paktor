@@ -80,3 +80,8 @@ h2 {
 .list li img{
     margin-right: 20px;
 }
+@font-face {  
+  font-family: Brandon_reg;  
+  src: url() format("ttf");
+}
+
