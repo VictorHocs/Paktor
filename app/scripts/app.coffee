@@ -1,2 +1,2 @@
 angular.module('PaktorApp',
-  ['ui.router'])
+  ['ui.router','ngAnimate','ui.bootstrap'])
