@@ -55,7 +55,7 @@ h1 {
 h2 {
     font-family: "Aver";
     font-weight: bold;
-	font-stretch: italic;
+	font-style: italic;
 }
 
 .carousel-inner > .item > .say {
