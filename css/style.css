@@ -62,3 +62,10 @@ font-weight: bold;
 .carousel-inner > .item > .say h2{
   margin: 0;padding: 30px;
 }
+a:hover, a:focus{
+	color : #403f43;
+	text-decoration: blink;
+}
+a{
+	color:#403f43;
+}
