@@ -29,5 +29,8 @@ angular.module('PaktorApp')
     }).state('privacy', {
       url: '/privacy'
       templateUrl: 'view/privacy.html' 
+    }).state('download', {
+      url: '/download'
+      templateUrl: 'view/download.html'
     })
 
