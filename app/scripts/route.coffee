@@ -26,5 +26,8 @@ angular.module('PaktorApp')
     }).state('term', {
       url: '/term'
       templateUrl: 'view/term.html'
+    }).state('privacy', {
+      url: '/privacy'
+      templateUrl: 'view/privacy.html' 
     })
 

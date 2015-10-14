@@ -1,5 +1,5 @@
 
-<div class="jumbotron" id="content">
+<div class="jumbotron" id="content" style="padding-bottom: 130px;">
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
@@ -9,30 +9,32 @@
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <div class="input-group input-group-lg"style="width: 100%;">
-                    <input type="text" class="form-control" placeholder="Username" style="margin-top: 20px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400; color:#46c8a8">
+                    <input data-ng-model="email.name" type="text" class="form-control" placeholder="What is your name?" style="margin-top: 20px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400; color:#46c8a8">
                 </div>
                 <div class="input-group input-group-lg" style="width: 100%;">
-                    <input type="text" class="form-control" placeholder="Email" style="margin-top: 40px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400;">
+                    <input ng-model="email.subject" type="text" class="form-control" placeholder="What do you want to talk about?" style="margin-top: 40px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400;color:#46c8a8;">
                 </div>
-                <textarea rows="4" style="width: 100%;margin-top: 40px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400; color:#cccccc;">Message</textarea>
+                <textarea data-ng-model="email.body" placeholder="Tell us more..." rows="4" style="width: 100%;margin-top: 40px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400; color:#cccccc;">Message</textarea>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3 style="color:#46c8a8;">SUPPORT</h3>
-                <p style="font-family:Brandon Text;">help@gopaktor.com</p>
-                <h3 style="color:#46c8a8; ">PARTNERSHIPS</h3>
-                <p style="font-family:Brandon Text;">partners@gopaktor.com</p>
-                <h3 style="color:#46c8a8;">COMMENTS AND IDEAS</h3>
-                <p style="font-family:Brandon Text;">help@gopaktor.com</p>
-                <h3 style="color:#46c8a8;">PRESS</h3>
-                <p style="font-family:Brandon Text;">partners@gopaktor.com</p>
+                <h3 style="color:#46c8a8;font-family:Brandon Text Medium;font-weight:bold;">SUPPORT</h3>
+                <p style="font-family:Brandon Text Medium;">help@gopaktor.com</p>
+                <h3 style="color:#46c8a8;font-family:'Brandon Text Medium';font-weight:bold; ">PARTNERSHIPS</h3>
+                <p style="font-family:Brandon Text Medium;">partners@gopaktor.com</p>
+                <h3 style="color:#46c8a8;font-family:'Brandon Text Medium';font-weight:bold;">COMMENTS AND IDEAS</h3>
+                <p style="ffont-family:Brandon Text Medium;">help@gopaktor.com</p>
+                <h3 style="color:#46c8a8;font-family:'Brandon Text Medium';font-weight:bold;">PRESS</h3>
+                <p style="font-family:Brandon Text Medium;">partners@gopaktor.com</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <button type="button" class="btn btn-default" style="width: 100%;background-color: #3d3f57;font-size: 18px;font-weight: 400;border: 2px solid #46c8a8; color:#46c8a8;">
-                    <p style="font size: 16px;font-weight: bold; word-spacing: 15px; font-family: Brandon Text; margin:2px;">SEND</p>
+                    <p style="font-size: 16px;font-weight: bold; word-spacing: 15px; font-family: Brandon Text; margin:2px;">
+                      <a href="mailto: help@gopaktor.com?subject={{email.subject}}%20from%20{{email.name}}&amp;body={{email.body}}">SEND</a>
+                    </p>
                 </button>
             </div>
             <div class="col-md-5"></div>

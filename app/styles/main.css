@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Aver;
+  src: url(../fonts/Aver.ttf);
+}
+@font-face {
+  font-family: Brandon Text Medium;
+  src: url(../fonts/BrandonText-Medium.otf);
+}
+@font-face {
+  font-family: BrandonText-Regular_2;
+  src: url(../fonts/BrandonText-Regular_2.otf);
+}
 .navbar {
     min-height: 81px;
     background: #3d3f57 url("../img/line.png") no-repeat;
@@ -82,5 +94,27 @@ h2 {
 }
 
 .btn1{
-    background-color: #3d3f57;border: 2px solid #46c8a8; color:#46c8a8;margin:30px 0 0 0;padding: 14px 40px;letter-spacing: 4px;font-size: 16px;font-weight: bold; font-family: 'BrandonText-Thin';
+    background-color: #3d3f57;border: 2px solid #46c8a8; color:#46c8a8;margin:30px 0 0 0;padding: 14px 40px;letter-spacing: 4px;font-size: 16px;font-weight: bold; font-family: BrandonText-Regular_2;
 }
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default
+{
+	background-color: #3d3f57;color:#46c8a8;border: 2px solid #46c8a8;
+}
+.link-store img{
+  width: 120px;
+}
+
+.blog-bg{
+  background: url("../img/blog.bg.jpg") no-repeat;
+  background-size:cover;
+}
+
+.blog-content{
+  background-color: rgba(34, 34, 38, 0.85);
+  color: white;
+}
+/*override start*/
+.carousel-control.left,.carousel-control.right {
+  background: none;
+}
+/*override end*/
