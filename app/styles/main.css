@@ -93,6 +93,13 @@ h2 {
   width: 120px;
 }
 
+.blog-bg{
+  background: url("../img/blog.bg.jpg") no-repeat;
+  background-size:cover;
+  color: #00b3ee;
+  height: 500px;
+}
+
 /*override start*/
 .carousel-control.left,.carousel-control.right {
   background: none;
