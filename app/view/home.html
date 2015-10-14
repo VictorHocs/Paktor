@@ -8,9 +8,17 @@
                     An easy way to
                     <br>make new friends
                 </h2>
-                <button type="button" class="btn btn-default btn1">
+                <button type="button" class="btn btn-default btn1" ng-show="!showStore" ng-click="showStore=true">
                      DOWNLOAD NOW
                 </button>
+                <div class="link-store" style="margin: 40px 0 0 0;" ng-show="showStore">
+                  <a href="https://itunes.apple.com/sg/app/paktor-chat-friends-meet-new/id654972611?mt=1" target="_blank" style="margin-right: 30px;">
+                    <img src="http://www.gopaktor.com/wp-content/themes/paktor/img/btn_app_1.jpg">
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.paktor&amp;referrer=utm_source%3Dgopaktor_com%26utm_medium%3Dhome_page%26utm_campaign%3Dplaystore_button" target="_blank">
+                    <img src="http://www.gopaktor.com/wp-content/themes/paktor/img/btn_google_1.jpg">
+                  </a>
+                </div>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-4">
@@ -103,7 +111,7 @@
 		</div>
         <div class="carousel-caption">
             <h3>Charmaine 32</h3>
-            <p style="font-family:Aver;">"Who would have thought, I would get together with my first match on Paktor! And we're so into each other. Thanks Paktor!" 
+            <p style="font-family:Aver;">"Who would have thought, I would get together with my first match on Paktor! And we're so into each other. Thanks Paktor!"
             </p>
         </div>
     </uib-slide>
@@ -131,7 +139,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <h2 style="color:#464963; padding-top:200px;">Send gifts or<br> direct messages</h2>
-                <p style="color:#464963; padding-top:20px; font-size:21px; font-family:Brandon Text Medium;">Don’t wait for Cupid.<br> 
+                <p style="color:#464963; padding-top:20px; font-size:21px; font-family:Brandon Text Medium;">Don’t wait for Cupid.<br>
                     Get connected faster by sending gifts or<br>
                     direct messages to your new friends on Paktor.</p>
             </div>

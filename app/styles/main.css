@@ -88,3 +88,13 @@ h2 {
 {
 	background-color: #3d3f57;color:#46c8a8;border: 2px solid #46c8a8;
 }
+
+.link-store img{
+  width: 120px;
+}
+
+/*override start*/
+.carousel-control.left,.carousel-control.right {
+  background: none;
+}
+/*override end*/
