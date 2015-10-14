@@ -1,5 +1,8 @@
 angular.module('PaktorApp',
   ['ui.router','ngAnimate','ui.bootstrap'])
+.config(($locationProvider)->
+#  $locationProvider.html5Mode true
+)
 .controller('ModalVideoCtrl', ($uibModal)->
   @open = ->
     $uibModal.open
