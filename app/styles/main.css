@@ -113,14 +113,8 @@ h2 {
   background-color: rgba(34, 34, 38, 0.85);
   color: white;
 }
-a:link,a:visited,a:hover,a:active {
-    color: white;
-}
 /*override start*/
 .carousel-control.left,.carousel-control.right {
   background: none;
 }
 /*override end*/
-# gaigai{
-	padding: 14px 90px;
-}
