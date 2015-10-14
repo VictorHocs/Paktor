@@ -96,8 +96,13 @@ h2 {
 .blog-bg{
   background: url("../img/blog.bg.jpg") no-repeat;
   background-size:cover;
-  color: #00b3ee;
   height: 500px;
+}
+
+.blog-content{
+  background-color: rgba(34, 34, 38, 0.85);
+  height: 500px;
+  color: white;
 }
 
 /*override start*/
