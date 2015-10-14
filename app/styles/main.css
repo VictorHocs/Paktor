@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Aver;
+  src: url(../fonts/Aver.ttf);
+}
+@font-face {
+  font-family: BrandonText-Medium;
+  src: url(../fonts/BrandonText-Medium.otf);
+}
 .navbar {
     min-height: 81px;
     background: #3d3f57 url("../img/line.png") no-repeat;
