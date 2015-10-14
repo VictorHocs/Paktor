@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
   <link rel="shortcut icon" href="img/favicon.ico"/>
+  <!--<base href="/">-->
 </head>
 <body ng-app="PaktorApp" debug-scope>
 <!--[if lt IE 7]>
@@ -29,7 +30,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" data-ui-sref="home" >
         <img src="img/logo.png" style="height: 40px;"/>
       </a>
     </div>
@@ -57,13 +58,13 @@
 			<div class="col-md-12 text-center" style="color: white;">
 				<div class=" img-wrap" style="padding: 30px;border-bottom: white solid 1px;">
 					<a href="mailto:help@gopaktor.com"><img src="img/Mail.png" alt="#"/></a>
-					<a href="https://www.youtube.com/user/PaktorAsiaLaunch"><img src="img/Facebook.png"/></a>
+					<a href="https://www.facebook.com/GoPaktor"><img src="img/Facebook.png"/></a>
 					<a href="https://twitter.com/gopaktor"><img src="img/Twitter.png"></a>
 					<a href="https://www.youtube.com/user/PaktorAsiaLaunch"><img src="img/Youtube.png"></a>
 				</div>
 				<div style="padding: 30px; font-family:'Brandon Text Medium'">
-					<a style="color:white; padding-right:20px;" href="#">DOWNLOAD THE APP</a>
-					<a style="color:white; padding-left:20px;" href="#">CONTACT US</a>
+					<a style="color:white; padding-right:20px;" data-ui-sref="home2">DOWNLOAD THE APP</a>
+					<a style="color:white; padding-left:20px;"data-ui-sref="contact">CONTACT US</a>
 				</div>
 				<div style="padding-bottom: 40px;font-family:' Brandon Text Medium'">
 					<p>
