@@ -147,6 +147,44 @@ h2 {
     color: white;
 }
 
+/* scroll style from https://cloud.google.com/pricing/ */
+
+.scroll-nav-container {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 2em;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.scroll-nav-item-container {
+    margin-top: 16px;
+    width: 7px;
+    height: 7px;
+    position: relative;
+}
+
+.scroll-nav-item-container:nth-child(1) {
+    margin-top: 0;
+}
+
+.scroll-nav-item {
+    width: 10px;
+    height: 10px;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #727272;
+    cursor: pointer;
+}
+
+.active .scroll-nav-item {
+    background-color: #6c6c6c;
+    border: 3px solid #40dbac;
+    width: 12px;
+    height: 12px;
+}
+
 /*override start*/
 .carousel-control.left, .carousel-control.right {
     background: none;

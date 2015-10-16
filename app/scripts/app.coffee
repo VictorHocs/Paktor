@@ -1,5 +1,5 @@
 angular.module('PaktorApp',
-  ['ui.router','ngAnimate','ui.bootstrap'])
+  ['ui.router','ngAnimate','ui.bootstrap','ngScrollSpy'])
 .config(($locationProvider)->
 #  $locationProvider.html5Mode true
 )
