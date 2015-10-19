@@ -93,14 +93,29 @@ h2 {
     font-style: italic;
 }
 
-.carousel-inner > .item > .say {
+.carousel-inner .item .say {
     color: white;
     height: 300px;
     background: #38373b;
-    text-align: center;
+    text-align: left;
+    padding-top: 90px;
 }
 
-.carousel-inner > .item > .say h2 {
+.carousel-inner .item .say span {
+    font-family: Aver;
+    margin-left: 120px;
+    display: block;
+    padding-top: 15px;
+}
+
+.carousel-inner .item .say img {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: white solid 2px;
+}
+
+.carousel-inner .item .say h2 {
     margin: 0;
     padding: 30px;
 }
