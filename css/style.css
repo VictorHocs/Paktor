@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'BrandonText-Thin_0';
+    src: url('../fonts/BrandonText-Thin_0.otf') format("opentype");
+}
 .navbar {
     min-height: 81px;
     background: #3d3f57 url("../img/line.png") no-repeat;
