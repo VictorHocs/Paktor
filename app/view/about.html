@@ -1,13 +1,32 @@
+<div class="scroll-nav-container" style="height: 145px;">
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p1">
+        <div class="scroll-nav-item"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p3">
+        <div class="scroll-nav-item"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p4">
+        <div class="scroll-nav-item"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p5">
+        <div class="scroll-nav-item"></div>
+    </div>
+</div>
+
 <!-- /.container -->
-<div class="jumbotron" id="content">
+<div class="jumbotron" id="p1" data-scrollspy-broadcast>
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1 style="font-size:60px; padding-top:150px;" >Why, how and where.</h1>
-                <p style=" padding-left:o.2px;padding-top:20px; font-size:25px;font-family:'BrandonText-Thin_0'; font-weight:900;">
+                <p style="  padding-top:20px; font-size:25px;font-family:'BrandonText-Thin_0'; font-weight:900;">
                     Learn more about why and how we created Paktor, see our
                     core values and where is our biggest target reach.</p>
+                <div>
+                    <img src="img/scroll.png" alt="" style="height: 26px;margin-right: 10px;"/>
+                    scroll down to see more
+                </div>
             </div>
             <div class="col-md-2"></div>
         </div>
@@ -16,7 +35,7 @@
         </div>
     </div>
 </div>
-<div style="background: #f0f1f7;" class="hidden-xs">
+<div style="background: #f0f1f7;" class="hidden-xs" data-scrollspy-broadcast id="p2">
 <uib-carousel>
     <uib-slide>
         <div  style="padding-top:50px; background-color:#f0f1f7;">
@@ -40,7 +59,7 @@
     </uib-slide>
 </uib-carousel>
 </div>
-<div class="jumbotron" id="content2" style="background-color:white;">
+<div class="jumbotron" id="p3" style="background-color:white;padding-bottom: 150px;" data-scrollspy-broadcast>
     <div class="container" >
         <div class="row">
             <div class="col-md-12">
@@ -67,11 +86,11 @@
     </div>
 </div>
 
-<div class="jumbotron" id="content3" style="background-color: #f0f1f7;">
+<div class="jumbotron" id="p4" data-scrollspy-broadcast style="background-color: #f0f1f7;">
     <div class="container" style="background-color:#f0f1f7;padding-bottom: 60px;">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-center" style="color:#403f43;font-size: 36px;font-style: italic;font-weight: bold;padding: 25px 0 20px 0;">In the news.</h1>
+                <h1 class="text-center" style=" color:#403f43; font-size:60px;font-style: italic;font-weight: bold;padding: 35px 0 50px 0;">In the news.</h1>
             </div>
 		</div>
 		<div class="row">
@@ -204,9 +223,9 @@
 		
     </div>
 </div>
-<div class="jumbotron" style="background: #403f43;">
+<div class="jumbotron" data-scrollspy-broadcast id="p5" style="background: #403f43;">
     <div class="text-center">
-        <h2  style="font-size: 60px;font-style: italic;padding: 45px; color: #6c6f7d;">Where we mostly are.</h2>
+        <h2  style="font-size: 45px;font-style: italic;padding: 0 0 30px; color: #6c6f7d;">Where we mostly are.</h2>
         <div class="row">
             <div class= "col-md-3"></div>
             <div class= "col-md-6"><img src="img/BI3.png" style="width: 100%;" alt=""/></div>
