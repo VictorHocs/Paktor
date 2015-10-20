@@ -221,6 +221,9 @@ img.paktor {
 
 .intro{padding-top: 120px;}
 .intro h2{padding-top:200px;}
+.tips h2{
+    padding-top:70px;
+}
 
 @media (max-width: 991px ) {
     #p1{padding-bottom: 20px;}
@@ -243,6 +246,13 @@ img.paktor {
     }
     .carousel-caption{
         text-align: left;
+    }
+    .tips{
+        padding-top:0;
+        padding-bottom: 80px;
+    }
+    .tips h2{
+        padding-top:0px;
     }
 }
 
