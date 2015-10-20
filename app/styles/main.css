@@ -231,6 +231,13 @@ img.paktor {
      margin-top: 150px;
 }
 
+.why-paktor{
+    padding-left: 40px;
+}
+.why-paktor2{
+     padding-bottom: 150px;
+ }
+
 @media (max-width: 991px ) {
     #p1{padding-bottom: 20px;}
     img.paktor {
@@ -265,6 +272,13 @@ img.paktor {
     }
     .about .see-more{
         margin-top: 50px;
+    }
+    .why-paktor{
+        padding-left: 0px;
+        margin-top: 60px;
+    }
+    .why-paktor2{
+        padding-bottom: 100px;
     }
 }
 
