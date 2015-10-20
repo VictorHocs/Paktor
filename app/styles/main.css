@@ -214,6 +214,7 @@ h2 {
 /*override end*/
 
 /*responsive design start*/
+#p1{padding-bottom: 0px;}
 img.paktor {
     padding-top: 175px;
 }
@@ -222,6 +223,7 @@ img.paktor {
 .intro h2{padding-top:200px;}
 
 @media (max-width: 991px ) {
+    #p1{padding-bottom: 20px;}
     img.paktor {
         padding-top: 60px;
     }
