@@ -233,6 +233,17 @@ img.paktor {
         display: inline;
         margin-top: 30px;
     }
+    .carousel-inner .item .say {
+        height: 380px;
+        text-align: center;
+    }
+    .carousel-inner .item .say img {
+         display: inline;
+         position: inherit;
+    }
+    .carousel-caption{
+        text-align: left;
+    }
 }
 
 /*responsive design end */
