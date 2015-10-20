@@ -214,45 +214,102 @@ h2 {
 /*override end*/
 
 /*responsive design start*/
-#p1{padding-bottom: 0px;}
+#p1 {
+    padding-bottom: 0px;
+}
+
 img.paktor {
     padding-top: 175px;
 }
 
-.intro{padding-top: 120px;}
-.intro h2{padding-top:200px;}
-.tips h2{
-    padding-top:70px;
+.intro {
+    padding-top: 120px;
+}
+
+.intro h2 {
+    padding-top: 200px;
+}
+
+.tips h2 {
+    padding-top: 70px;
+}
+
+.about h2 {
+    padding-top: 100px;
+}
+
+.about .see-more {
+    margin-top: 150px;
+}
+
+.why-paktor {
+    padding-left: 40px;
+}
+
+.why-paktor2 {
+    padding-bottom: 130px;
 }
 
 @media (max-width: 991px ) {
-    #p1{padding-bottom: 20px;}
+    #p1 {
+        padding-bottom: 20px;
+    }
+
     img.paktor {
         padding-top: 60px;
     }
-    .intro{padding-top: 0px;}
-    .intro h2{padding-top:100px;}
-    .intro .img-responsive{
+
+    .intro {
+        padding-top: 0px;
+    }
+
+    .intro h2 {
+        padding-top: 100px;
+    }
+
+    .intro .img-responsive {
         display: inline;
         margin-top: 50px;
     }
+
     .carousel-inner .item .say {
         height: 380px;
         text-align: center;
     }
+
     .carousel-inner .item .say img {
-         display: inline;
-         position: inherit;
+        display: inline;
+        position: inherit;
     }
-    .carousel-caption{
+
+    .carousel-caption {
         text-align: left;
     }
-    .tips{
-        padding-top:0;
+
+    .tips {
+        padding-top: 0;
         padding-bottom: 80px;
     }
-    .tips h2{
-        padding-top:0px;
+
+    .tips h2 {
+        padding-top: 0px;
+    }
+
+    .about h2 {
+        padding-top: 50px;
+    }
+
+    .about .see-more {
+        margin-top: 50px;
+    }
+
+    .why-paktor {
+        padding-left: 0px;
+        margin-top: 60px;
+    }
+
+    .why-paktor2 {
+        padding-bottom: 80px;
     }
 }
 
