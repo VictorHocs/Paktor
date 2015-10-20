@@ -7,7 +7,16 @@
       templateUrl: 'view/home.html'
     }).state('about', {
       url: '/about',
-      templateUrl: 'view/about.html'
+      templateUrl: 'view/about.html',
+      controller: function($scope) {
+        return $scope.showMore = function() {
+          if (!$scope.p1) {
+            return $scope.p1 = 1;
+          } else {
+            return $scope.p2 = 1;
+          }
+        };
+      }
     }).state('blog', {
       url: '/blog',
       templateUrl: 'view/blog.html'

@@ -166,18 +166,9 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12" style="padding-bottom: 40px;">
-                <a href="#" style="font-family:'BrandonText-Thin_0'; font-weight:900;">
-                    <button type="button" class="btn btn-default"
-                            style="margin-top: 40px;width: 100%;padding: 12px;background-color: transparent;font-size: 18px;border: 2px solid #41425a;font-family: BrandonText-Bold;">
-                        SHOW MORE
-                    </button>
-                </a>
-            </div>
-        </div>
+
         <!--No4 Article-->
-        <div class="row">
+        <div ng-show="p1" class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10" style="padding-top: 60px; padding-bottom:40px;">
                 <p style="font-family:Brandon Text Medium;font-size:15px; color:#403f43">18 November 2014 Techcrunch</p>
@@ -202,7 +193,7 @@
             <div class="col-md-1"></div>
         </div>
         <!--No5 Article-->
-        <div class="row">
+        <div ng-show="p1" class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10" style="padding-top: 60px; padding-bottom:40px;">
                 <p style="font-family:Brandon Text Medium;font-size:15px; color:#403f43">18 November 2014 Tech in
@@ -226,7 +217,7 @@
             <div class="col-md-1"></div>
         </div>
         <!--No6 Article-->
-        <div class="row">
+        <div ng-show="p1" class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10" style="padding-top: 60px; padding-bottom:40px;">
                 <p style="font-family:Brandon Text Medium;font-size:15px; color:#403f43">17 July 2015 South China
@@ -249,7 +240,7 @@
             <div class="col-md-1"></div>
         </div>
         <!--No7 Article-->
-        <div class="row">
+        <div ng-show="p2" class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10" style="padding-top: 60px; padding-bottom:40px;">
                 <p style="font-family:Brandon Text Medium;font-size:15px; color:#403f43">22 May 2015 High Net-Worth</p>
@@ -271,7 +262,7 @@
 
         </div>
         <!--No8 Article-->
-        <div class="row">
+        <div ng-show="p2" class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10" style="padding-top: 60px; padding-bottom:40px;">
                 <p style="font-family:Brandon Text Medium;font-size:15px; color:#403f43">5 July 2015 The Straits
@@ -294,7 +285,7 @@
         </div>
 
         <!--No9 Article-->
-        <div class="row">
+        <div ng-show="p2" class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10" style="padding-top: 60px; padding-bottom:40px;">
                 <p style="font-family:Brandon Text Medium;font-size:15px; color:#403f43">29 September 2015 Mashable</p>
@@ -315,6 +306,15 @@
                         style="color:#403f43; padding-top: 20px;"></span> READ MORE</a>
             </div>
             <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" style="padding-top: 40px;">
+                <button type="button" class="btn btn-default" ng-click="showMore()"
+                        style="margin-top: 40px;width: 100%;padding: 12px;background-color: transparent;font-size: 18px;border: 2px solid #41425a;font-family: BrandonText-Bold;">
+                    SHOW MORE
+                </button>
+            </div>
         </div>
     </div>
 </div>

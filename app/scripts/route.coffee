@@ -7,7 +7,13 @@ angular.module('PaktorApp')
       templateUrl: 'view/home.html'
     }).state('about', {
       url: '/about'
-      templateUrl: 'view/about.html'
+      templateUrl: 'view/about.html',
+      controller: ($scope)->
+        $scope.showMore = ->
+          if !$scope.p1
+            $scope.p1 = 1
+          else
+            $scope.p2 = 1
     }).state('blog', {
       url: '/blog'
       templateUrl: 'view/blog.html'
@@ -28,7 +34,7 @@ angular.module('PaktorApp')
       templateUrl: 'view/term.html'
     }).state('privacy', {
       url: '/privacy'
-      templateUrl: 'view/privacy.html' 
+      templateUrl: 'view/privacy.html'
     }).state('download', {
       url: '/download'
       templateUrl: 'view/download.html'
