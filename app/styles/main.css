@@ -224,6 +224,12 @@ img.paktor {
 .tips h2{
     padding-top:70px;
 }
+.about h2{
+    padding-top:100px;
+}
+.about .see-more{
+     margin-top: 150px;
+}
 
 @media (max-width: 991px ) {
     #p1{padding-bottom: 20px;}
@@ -253,6 +259,12 @@ img.paktor {
     }
     .tips h2{
         padding-top:0px;
+    }
+    .about h2{
+        padding-top:50px;
+    }
+    .about .see-more{
+        margin-top: 50px;
     }
 }
 
