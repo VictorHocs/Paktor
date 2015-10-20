@@ -1,10 +1,12 @@
 #Gaigai {
     padding: 14px 90px;
 }
+
 @font-face {
     font-family: 'BrandonText-Thin_0';
     src: url('../fonts/BrandonText-Thin_0.otf') format("opentype");
 }
+
 @font-face {
     font-family: 'Aver';
     src: url('../fonts/Aver.ttf') format('truetype');
@@ -18,17 +20,20 @@
 @font-face {
     font-family: 'Brandon Text Medium';
     src: url('../fonts/BrandonText-Medium.otf') format("opentype");
-	
+
 }
+
 @font-face {
     font-family: 'BrandonText-Regular_2';
     src: url('../fonts/BrandonText-Regular_2.otf') format("opentype");
 }
+
 @font-face {
     font-family: 'BrandonText-Bold';
     src: url('../fonts/BrandonText-Bold.otf') format("opentype");
 }
-body{
+
+body {
     font-family: BrandonText-Regular_2;
 }
 
@@ -207,3 +212,16 @@ h2 {
 }
 
 /*override end*/
+
+/*responsive design start*/
+img.paktor {
+    padding-top: 175px;
+}
+
+@media (max-width: 991px ) {
+    img.paktor {
+        padding-top: 100px;
+    }
+}
+
+/*responsive design end */
