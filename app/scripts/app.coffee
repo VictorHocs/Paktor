@@ -14,3 +14,7 @@ angular.module('PaktorApp',
   @close = -> $modalInstance.dismiss 'cancel'
   return
 )
+.directive 'clickToTop', ->
+  (scope, element)->
+    element.on 'click', ->
+      document.body.scrollTop = 0

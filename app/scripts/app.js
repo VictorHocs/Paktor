@@ -12,6 +12,12 @@
     this.close = function() {
       return $modalInstance.dismiss('cancel');
     };
+  }).directive('clickToTop', function() {
+    return function(scope, element) {
+      return element.on('click', function() {
+        return document.body.scrollTop = 0;
+      });
+    };
   });
 
 }).call(this);
