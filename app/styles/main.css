@@ -209,15 +209,15 @@ h2 {
     width: 12px;
     height: 12px;
 }
-.form-control:focus {border-color:#ceced5;
+.form-control:focus {border-color:#ceced5!important;
 -webkit-box-shadow: none!important;
     -moz-box-shadow: none!important;
     box-shadow: none!important;
 }
-textarea:hover,  
-textarea:focus
-{
-    border-color:#ceced5;
+textarea:focus { 
+    outline: none !important;
+    border-color::#ceced5;
+    box-shadow: none;
 }
 /*override start*/
 .carousel-control.left, .carousel-control.right {
