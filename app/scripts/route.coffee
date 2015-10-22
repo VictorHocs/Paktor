@@ -5,10 +5,8 @@ angular.module('PaktorApp')
   .state('home', {
       url: '/home'
       templateUrl: 'view/home.html'
-      controller: ($scope, $anchorScroll, $location) ->
-        $scope.go = (hash) ->
-          $location.hash hash
-          $anchorScroll()
+      controller: 'AnchorScrollCtrl'
+      controllerAs: 'anchor'
     }).state('about', {
       url: '/about'
       templateUrl: 'view/about.html',

@@ -5,12 +5,8 @@
     return $stateProvider.state('home', {
       url: '/home',
       templateUrl: 'view/home.html',
-      controller: function($scope, $anchorScroll, $location) {
-        return $scope.go = function(hash) {
-          $location.hash(hash);
-          return $anchorScroll();
-        };
-      }
+      controller: 'AnchorScrollCtrl',
+      controllerAs: 'anchor'
     }).state('about', {
       url: '/about',
       templateUrl: 'view/about.html',
