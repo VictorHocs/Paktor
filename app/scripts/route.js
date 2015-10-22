@@ -10,13 +10,17 @@
     }).state('about', {
       url: '/about',
       templateUrl: 'view/about.html',
-      controller: function($scope) {
-        return $scope.showMore = function() {
+      controller: function($scope, $location, $anchorScroll) {
+        $scope.showMore = function() {
           if (!$scope.p1) {
             return $scope.p1 = 1;
           } else {
             return $scope.p2 = 1;
           }
+        };
+        return $scope.go = function(hash) {
+          $location.hash(hash);
+          return $anchorScroll();
         };
       }
     }).state('blog', {

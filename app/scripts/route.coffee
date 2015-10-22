@@ -10,12 +10,15 @@ angular.module('PaktorApp')
     }).state('about', {
       url: '/about'
       templateUrl: 'view/about.html',
-      controller: ($scope)->
+      controller: ($scope, $location, $anchorScroll)->
         $scope.showMore = ->
           if !$scope.p1
             $scope.p1 = 1
           else
             $scope.p2 = 1
+        $scope.go = (hash) ->
+          $location.hash hash
+          $anchorScroll()
     }).state('blog', {
       url: '/blog'
       templateUrl: 'view/blog.html'
