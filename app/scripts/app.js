@@ -26,14 +26,17 @@ angular.module('PaktorApp', ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScroll
       return document.body.scrollTop = 0;
     });
   };
-}).directive('animateEffect', function() {
+}).directive('animateEffect', function($timeout) {
   return function(scope, element) {
-    return scope.$on('animate', function() {
+    var animate;
+    animate = function() {
       var bottom, innerHeight, top, _ref;
       _ref = element[0].getBoundingClientRect(), top = _ref.top, bottom = _ref.bottom;
       innerHeight = window.innerHeight || document.documentElement.clientHeight;
       scope.isElementInViewport = top < innerHeight && bottom > 0;
       return scope.$apply();
-    });
+    };
+    $timeout(animate, 1000);
+    return scope.$on('animate', animate);
   };
 });

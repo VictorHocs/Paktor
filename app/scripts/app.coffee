@@ -27,11 +27,13 @@ angular.module('PaktorApp',
   (scope, element)->
     element.on 'click', ->
       document.body.scrollTop = 0
-).directive('animateEffect', ->
+).directive('animateEffect', ($timeout)->
   (scope, element)->
-    scope.$on 'animate', ->
+    animate = ->
       {top,bottom} = element[0].getBoundingClientRect()
       innerHeight = window.innerHeight or document.documentElement.clientHeight
       scope.isElementInViewport = top < innerHeight and bottom > 0
-      scope.$apply();
+      scope.$apply()
+    $timeout animate, 1000
+    scope.$on 'animate', animate
 )
