@@ -1,5 +1,9 @@
 angular.module('PaktorApp',
-  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy','debug'])
+  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy', 'debug'])
+.run(($rootScope, $window)->
+  angular.element($window).on 'resize scroll', ->
+    $rootScope.$broadcast 'animate'
+)
 .config(($locationProvider)->
 #  $locationProvider.html5Mode true
 )
@@ -19,7 +23,15 @@ angular.module('PaktorApp',
     $anchorScroll()
   return
 )
-.directive 'clickToTop', ->
+.directive('clickToTop', ->
   (scope, element)->
     element.on 'click', ->
       document.body.scrollTop = 0
+).directive('animateEffect', ->
+  (scope, element)->
+    scope.$on 'animate', ->
+      {top,bottom} = element[0].getBoundingClientRect()
+      innerHeight = window.innerHeight or document.documentElement.clientHeight
+      scope.isElementInViewport = top < innerHeight and bottom > 0
+      scope.$apply();
+)
