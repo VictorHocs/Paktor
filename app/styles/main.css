@@ -230,14 +230,16 @@ textarea:focus {
 .left{
   position: relative;
   top: -770px;
+  opacity: 0;
 }
 .p1-animate .left{
   position: relative;
   top: 0;
-  -webkit-transition : all 1s;
-  -moz-transition : all 1s;
-  -ms-transition : all 1s;
-  transition : all 1s;
+  opacity: 1;
+  -webkit-transition : all 2s;
+  -moz-transition : all 2s;
+  -ms-transition : all 2s;
+  transition : all 2s;
  }
 /*animations end*/
 
