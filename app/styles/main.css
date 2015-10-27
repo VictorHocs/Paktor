@@ -214,9 +214,9 @@ h2 {
     -moz-box-shadow: none!important;
     box-shadow: none!important;
 }
-textarea:focus { 
+textarea:focus {
     outline: none !important;
-    border-color::#ceced5;
+    border-color:#ceced5;
     box-shadow: none;
 }
 /*override start*/
@@ -225,6 +225,21 @@ textarea:focus {
 }
 
 /*override end*/
+
+/*animations start*/
+.left{
+  position: relative;
+  top: -770px;
+}
+.p1-animate .left{
+  position: relative;
+  top: 0;
+  -webkit-transition : all 1s;
+  -moz-transition : all 1s;
+  -ms-transition : all 1s;
+  transition : all 1s;
+ }
+/*animations end*/
 
 /*responsive design start*/
 #p1 {
