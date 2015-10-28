@@ -25,10 +25,10 @@
     </div>
 </div>
 
-<div id="p1" data-scrollspy-broadcast class="jumbotron" animate-effect ng-class="{'p1-animate':isElementInViewport}">
-    <div class="container">
+<div id="p1" data-scrollspy-broadcast class="jumbotron">
+    <div class="container" in-viewport="isIn">
         <div class="row">
-            <div class="col-md-5 col-md-offset-2 left">
+            <div class="col-md-5 col-md-offset-2 p1-left-start" ng-class="{'p1-left-end':isIn}">
                 <img src="img/homepageword.png" class="paktor">
                 <h2 style="padding-top:20px;">
                     An easy way to

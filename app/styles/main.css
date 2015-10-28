@@ -227,13 +227,12 @@ textarea:focus {
 /*override end*/
 
 /*animations start*/
-.left{
+.p1-left-start{
   position: relative;
   top: -770px;
   opacity: 0;
 }
-.p1-animate .left{
-  position: relative;
+.p1-left-end{
   top: 0;
   opacity: 1;
   -webkit-transition : all 2s;
