@@ -39,12 +39,11 @@ body {
 
 .navbar {
     min-height: 81px;
-    background: #3d3f57 url("../img/line2.png") no-repeat;
+    background: #3d3f57 url("../img/line2.png") repeat-x top center;
     border: none;
     border-radius: 0;
     padding-top: 7px;
     margin-bottom: 0px;
-    background-size: contain;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -251,6 +250,26 @@ textarea:focus {
 }
 
 .p1-right-end {
+    opacity: 1;
+    right: 0;
+}
+
+.p2-left-start {
+    left: -770px;
+    opacity: 0;
+}
+
+.p2-left-end {
+    left: 0;
+    opacity: 1;
+}
+
+.p2-right-start {
+    opacity: 0.3;
+    right: -500px;
+}
+
+.p2-right-end {
     opacity: 1;
     right: 0;
 }
