@@ -227,19 +227,33 @@ textarea:focus {
 /*override end*/
 
 /*animations start*/
-.p1-left-start{
-  position: relative;
-  top: -770px;
-  opacity: 0;
+.t1 {
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    transition: all 2s;
+    position: relative;
 }
-.p1-left-end{
-  top: 0;
-  opacity: 1;
-  -webkit-transition : all 2s;
-  -moz-transition : all 2s;
-  -ms-transition : all 2s;
-  transition : all 2s;
- }
+
+.p1-left-start {
+    top: -770px;
+    opacity: 0;
+}
+
+.p1-left-end {
+    top: 0;
+    opacity: 1;
+}
+
+.p1-right-start {
+    opacity: 0.3;
+    right: -500px;
+}
+
+.p1-right-end {
+    opacity: 1;
+    right: 0;
+}
 /*animations end*/
 
 /*responsive design start*/
