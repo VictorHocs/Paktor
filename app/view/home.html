@@ -30,83 +30,102 @@
         <div class="row">
             <div class="col-md-5 col-md-offset-2 t1 p1-left-start" ng-class="{'p1-left-end':isIn}">
                 <img src="img/homepageword.png" class="paktor">
+
                 <h2 style="padding-top:20px;">
                     An easy way to
                     <br>make new friends
                 </h2>
+
                 <div style="height: 170px;margin-top: 40px;">
-                    <button style="padding-left: 50px;padding-right: 50px;letter-spacing: 5px;" type="button" class="btn btn-default btn1" ng-show="!showStore" ng-click="showStore=true">
+                    <button style="padding-left: 50px;padding-right: 50px;letter-spacing: 5px;" type="button"
+                            class="btn btn-default btn1" ng-show="!showStore" ng-click="showStore=true">
                         DOWNLOAD NOW
                     </button>
-                    <div class="link-store"  ng-show="showStore">
-                        <a href="https://itunes.apple.com/sg/app/paktor-chat-friends-meet-new/id654972611?mt=1" target="_blank" style="margin-right: 30px;">
+                    <div class="link-store" ng-show="showStore">
+                        <a href="https://itunes.apple.com/sg/app/paktor-chat-friends-meet-new/id654972611?mt=1"
+                           target="_blank" style="margin-right: 30px;">
                             <img src="img/btn_app_1.png">
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.paktor&amp;referrer=utm_source%3Dgopaktor_com%26utm_medium%3Dhome_page%26utm_campaign%3Dplaystore_button" target="_blank">
+                        <a href="https://play.google.com/store/apps/details?id=com.paktor&amp;referrer=utm_source%3Dgopaktor_com%26utm_medium%3Dhome_page%26utm_campaign%3Dplaystore_button"
+                           target="_blank">
                             <img src="img/btn_google_1.png">
                         </a>
                     </div>
                 </div>
-                <div><img src="img/scroll.png" alt="" style="height: 26px;margin-right: 10px;"/> scroll down to see more</div>
+                <div><img src="img/scroll.png" alt="" style="height: 26px;margin-right: 10px;"/> scroll down to see more
+                </div>
             </div>
             <div class="col-md-5 hidden-sm hidden-xs" style="overflow: hidden;">
-                <img src="img/phone.png"class="img-responsive t1 p1-right-start" ng-class="{'p1-right-end':isIn}" alt="Responsive image">
+                <img src="img/phone.png" class="img-responsive t1 p1-right-start" ng-class="{'p1-right-end':isIn}"
+                     alt="Responsive image">
             </div>
         </div>
     </div>
 </div>
 <script type="text/ng-template" id="myModalContent.html">
     <div style="position: relative;">
-        <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove" style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
+        <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
+              style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
 
         <video style="width: 100%;" controls>
-            <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4" type="video/mp4">
+            <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4"
+                    type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
     </div>
 </script>
 
 <div class="fullcontainer hidden-xs" ng-controller="ModalVideoCtrl as video">
-    <img ng-click="video.open()" src="img/videoBackground.png" class="img-responsive" style="background-size:cover; width:100%;cursor: pointer;" alt="">
+    <img ng-click="video.open()" src="img/videoBackground.png" class="img-responsive"
+         style="background-size:cover; width:100%;cursor: pointer;" alt="">
 </div>
 
 <video class="visible-xs" style="width: 100%;" controls>
-    <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4" type="video/mp4">
+    <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4"
+            type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
 
-<div id="p2" data-scrollspy-broadcast class="jumbotron intro" style="background:white;padding-bottom: 0px;" animate-effect ng-class="{'p2-animate':isElementInViewport}">
+<div id="p2" data-scrollspy-broadcast class="jumbotron intro" style="background:white;padding-bottom: 0px;"
+     animate-effect ng-class="{'p2-animate':isElementInViewport}">
     <div class="container" in-viewport="isIn" delay="3000">
         <div class="row">
             <div class="col-md-5 col-md-push-7" style="overflow:hidden;">
-                <h2 class="t1 p2-right-start" ng-class="{'p2-right-end':isIn}" style="color:#464963;">To the left or<br> to the right</h2>
-                <p class="t1 p2-right-start" ng-class="{'p2-right-end':isIn}" style="color:#464963; padding-top:20px; font-size:21px; font-family:'BrandonText-Thin_0'; font-weight:900;">A swipe away would be a magical touch for life.
+                <h2 class="t1 p2-right-start" ng-class="{'p2-right-end':isIn}" style="color:#464963;">To the left or<br>
+                    to the right</h2>
+
+                <p class="t1 p2-right-start" ng-class="{'p2-right-end':isIn}"
+                   style="color:#464963; padding-top:20px; font-size:21px; font-family:'BrandonText-Thin_0'; font-weight:900;">
+                    A swipe away would be a magical touch for life.
                     Swipe right to like and swipe left to pass.</p>
             </div>
             <div class="col-md-4 col-md-pull-3 text-center">
-                <img src="img/phone.png" class="img-responsive t1 p2-left-start" ng-class="{'p2-left-end':isIn}" alt="Responsive image">
+                <img src="img/phone.png" class="img-responsive t1 p2-left-start" ng-class="{'p2-left-end':isIn}"
+                     alt="Responsive image">
             </div>
         </div>
     </div>
 </div>
 <div id="p3" data-scrollspy-broadcast class="jumbotron intro" style="background:#f0f1f7;padding-bottom: 0px;">
-                <div class="container">
-                    <div class="row">
+    <div class="container">
+        <div class="row">
             <div class="col-md-5 col-md-offset-2">
                 <h2 style="color:#464963;">It's a Match!</h2>
+
                 <p style="color:#464963; padding-top:20px; font-size:21px; font-family:'BrandonText-Thin_0'; font-weight:900;">
                     When someone likes you back, you will get paired up with him/her.
                     <br/><br/> Paktor brings like-minded people together.
                 </p>
             </div>
             <div class="col-md-5 text-center">
-                <img src="img/phone2.png"class="img-responsive" alt="Responsive image">
+                <img src="img/phone2.png" class="img-responsive" alt="Responsive image">
             </div>
         </div>
     </div>
 </div>
 
-<div id="p4" data-scrollspy-broadcast style="background: #38373b;padding: 30px;color: #606370;text-align: center;font-size: 30px;font-style: italic;padding: 70px 0 1px;">
+<div id="p4" data-scrollspy-broadcast
+     style="background: #38373b;padding: 30px;color: #606370;text-align: center;font-size: 30px;font-style: italic;padding: 70px 0 1px;">
     <h2>What people say <br/>about us.</h2>
 </div>
 <uib-carousel class="hidden-sm hidden-xs">
@@ -165,7 +184,7 @@
         <div class="say">
             <img src="img/p1.png" alt=""/>
         </div>
-        <div class="carousel-caption" >
+        <div class="carousel-caption">
             <p style="font-family:Aver;font-size: 16px;font-style:italic;">
                 " Thank you Paktor! I found my current girlfriend on the app and I can't thank you enough! "
                 <br/><br/>
@@ -179,7 +198,7 @@
         <div class="say">
             <img src="img/p2.png" alt=""/>
         </div>
-        <div class="carousel-caption" >
+        <div class="carousel-caption">
             <p style="font-family:Aver;font-size: 16px;font-style:italic;">
                 "I thought I'd let you know, I found my girlfriend on Paktor and we just got engaged "
                 <br/><br/>
@@ -193,7 +212,7 @@
         <div class="say">
             <img src="img/p3.png" alt=""/>
         </div>
-        <div class="carousel-caption" >
+        <div class="carousel-caption">
             <p style="font-family:Aver;font-size: 16px;font-style:italic;">
                 "I will recommend Paktor to my friends since i found my boyfriend there."
                 <br/><br/>
@@ -207,9 +226,10 @@
         <div class="say">
             <img src="img/p4.png" alt=""/>
         </div>
-        <div class="carousel-caption" >
+        <div class="carousel-caption">
             <p style="font-family:Aver;font-size: 16px;font-style:italic;">
-                "Who would have thought, I would get together with my first match on Paktor! And we're so into each other. Thanks Paktor!"
+                "Who would have thought, I would get together with my first match on Paktor! And we're so into each
+                other. Thanks Paktor!"
                 <br/><br/>
                 <span style="font-family: BrandonText-Regular_2;font-style: normal;">
                     Charmaine, 32
@@ -225,10 +245,12 @@
         <div class="row">
             <div class="col-md-5 col-md-push-7">
                 <h2 style="color:#464963;">Start a conversation.</h2>
-                <p style="color:#464963; padding-top:20px; font-size:21px; font-family:'BrandonText-Thin_0'; font-weight:900;">A first mover always has more advantages.<br>Be active and break an awkward silence.</p>
+
+                <p style="color:#464963; padding-top:20px; font-size:21px; font-family:'BrandonText-Thin_0'; font-weight:900;">
+                    A first mover always has more advantages.<br>Be active and break an awkward silence.</p>
             </div>
             <div class="col-md-4 col-md-pull-3 text-center">
-                <img src="img/phone3.png"class="img-responsive" alt="Responsive image">
+                <img src="img/phone3.png" class="img-responsive" alt="Responsive image">
             </div>
         </div>
     </div>
@@ -238,12 +260,14 @@
         <div class="row">
             <div class="col-md-5 col-md-offset-2">
                 <h2 style="color:#464963;">Send gifts or<br> direct messages</h2>
-                <p style="color:#464963; padding-top:20px; font-size:21px; font-family:'BrandonText-Thin_0'; font-weight:900;">Don’t wait for Cupid.
+
+                <p style="color:#464963; padding-top:20px; font-size:21px; font-family:'BrandonText-Thin_0'; font-weight:900;">
+                    Don’t wait for Cupid.
                     Get connected faster by sending gifts or
                     direct messages to your new friends on Paktor.</p>
             </div>
             <div class="col-md-5 text-center">
-                <img src="img/phone4.png"class="img-responsive" alt="Responsive image">
+                <img src="img/phone4.png" class="img-responsive" alt="Responsive image">
             </div>
         </div>
     </div>
@@ -251,12 +275,13 @@
 <div id="p7" data-scrollspy-broadcast class="jumbotron" style="background:#403f43;padding-bottom: 0px;">
     <div class="container">
         <div class="row" style="text-align:center;">
-            <div class="col-md-12"><h2 style="color:#6c6f7d; padding-bottom: 40px;font-size: 30px;">Play with the filters,<br/>find your perfect match.</h2></div>
+            <div class="col-md-12"><h2 style="color:#6c6f7d; padding-bottom: 40px;font-size: 30px;">Play with the
+                filters,<br/>find your perfect match.</h2></div>
         </div>
         <div class="row" style="text-align:center;">
             <div class="col-md-12">
                 <img src="img/pic.png" class="img-responsive hidden-xs" alt="Responsive image">
-                <img src="img/web_mobile.png"class="img-responsive visible-xs" alt="Responsive image">
+                <img src="img/web_mobile.png" class="img-responsive visible-xs" alt="Responsive image">
             </div>
 
         </div>
@@ -266,8 +291,11 @@
     <div class="container" style="padding-top:80px;padding-bottom:80px;">
         <div class="row">
             <div class="col-md-4 col-md-offset-1 tips">
-                <h2  style="color:#464963; ">Hot tips</h2>
-                <p style="color:#464963; font-size:21px; font-family:Brandon Text Medium; padding-top:20px;">Take advantage of our new<br>  member subscription and gain<br>access to benefits that will enrich your Paktor experience!</p>
+                <h2 style="color:#464963; ">Hot tips</h2>
+
+                <p style="color:#464963; font-size:21px; font-family:Brandon Text Medium; padding-top:20px;">Take
+                    advantage of our new<br> member subscription and gain<br>access to benefits that will enrich your
+                    Paktor experience!</p>
             </div>
             <div class="col-md-6 col-md-offset-1">
                 <ul class="list-unstyled list">
