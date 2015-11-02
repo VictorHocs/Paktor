@@ -94,8 +94,14 @@ body {
 }
 
 .carousel-indicators li {
-    border: 1px solid #49e1b7;
+    border: none;
     background-color: #727272;
+    margin-left: 6px !important;
+}
+
+.carousel-indicators .active {
+    border: 2px solid white;
+    background-color: gray;
 }
 
 .img-wrap img {
@@ -400,6 +406,15 @@ img.paktor {
 
     .why-paktor2 {
         padding-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        font-size: 20px;
     }
 }
 
