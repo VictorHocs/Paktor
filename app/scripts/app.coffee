@@ -1,5 +1,5 @@
 angular.module('PaktorApp',
-  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy', 'debug'])
+  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy'])
 .run(($rootScope, $window)->
   angular.element($window).on 'resize scroll', ->
     $rootScope.$broadcast 'animate'
@@ -16,11 +16,6 @@ angular.module('PaktorApp',
   return
 ).controller('ModalVideoInstanceCtrl', ($modalInstance)->
   @close = -> $modalInstance.dismiss 'cancel'
-  return
-).controller('AnchorScrollCtrl', ($anchorScroll, $location)->
-  @go = (hash) ->
-    $location.hash hash
-    $anchorScroll()
   return
 )
 .directive('clickToTop', ->

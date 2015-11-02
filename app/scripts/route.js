@@ -4,9 +4,7 @@
     $urlRouterProvider.otherwise('/home');
     return $stateProvider.state('home', {
       url: '/home',
-      templateUrl: 'view/home.html',
-      controller: 'AnchorScrollCtrl',
-      controllerAs: 'anchor'
+      templateUrl: 'view/home.html'
     }).state('about', {
       url: '/about',
       templateUrl: 'view/about.html',
