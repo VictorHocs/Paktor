@@ -42,7 +42,8 @@ angular.module('PaktorApp',
         {height} = element[0].getBoundingClientRect()
         innerHeight = window.innerHeight or document.documentElement.clientHeight
         if height < innerHeight
-          console.log 'enlarge...'
+          height = innerHeight + 'px'
+          element.css {height}
       , 1000
     resize()
     scope.$on 'resize', resize

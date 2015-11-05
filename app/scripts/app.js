@@ -53,7 +53,10 @@
           height = element[0].getBoundingClientRect().height;
           innerHeight = window.innerHeight || document.documentElement.clientHeight;
           if (height < innerHeight) {
-            return console.log('enlarge...');
+            height = innerHeight + 'px';
+            return element.css({
+              height: height
+            });
           }
         }, 1000);
       };
