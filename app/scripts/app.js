@@ -2,7 +2,7 @@
 (function() {
   angular.module('PaktorApp', ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy']).run(function($rootScope, $window) {
     return angular.element($window).on('resize scroll', function() {
-      return $rootScope.$broadcast('animate');
+      return $rootScope.$broadcast('resize');
     });
   }).config(function($locationProvider) {}).controller('ModalVideoCtrl', function($uibModal) {
     this.open = function() {
@@ -29,16 +29,16 @@
         delay: '@'
       },
       link: function(scope, element) {
-        var animate;
-        animate = function() {
+        var resize;
+        resize = function() {
           var bottom, innerHeight, ref, top;
           ref = element[0].getBoundingClientRect(), top = ref.top, bottom = ref.bottom;
           innerHeight = window.innerHeight || document.documentElement.clientHeight;
           scope.isIn = top < innerHeight && bottom > 0;
           return scope.$apply();
         };
-        $timeout(animate, scope.delay ? scope.delay * 1 : 1000);
-        return scope.$on('animate', animate);
+        $timeout(resize, scope.delay ? scope.delay * 1 : 1000);
+        return scope.$on('resize', resize);
       }
     };
   });

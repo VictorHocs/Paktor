@@ -2,7 +2,7 @@ angular.module('PaktorApp',
   ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy'])
 .run(($rootScope, $window)->
   angular.element($window).on 'resize scroll', ->
-    $rootScope.$broadcast 'animate'
+    $rootScope.$broadcast 'resize'
 )
 .config(($locationProvider)->
 #  $locationProvider.html5Mode true
@@ -27,11 +27,11 @@ angular.module('PaktorApp',
     isIn: '=inViewport'
     delay: '@'
   link: (scope, element)->
-    animate = ->
+    resize = ->
       {top,bottom} = element[0].getBoundingClientRect()
       innerHeight = window.innerHeight or document.documentElement.clientHeight
       scope.isIn = top < innerHeight and bottom > 0
       scope.$apply()
-    $timeout animate, if scope.delay then scope.delay * 1 else 1000
-    scope.$on 'animate', animate
+    $timeout resize, if scope.delay then scope.delay * 1 else 1000
+    scope.$on 'resize', resize
 )
