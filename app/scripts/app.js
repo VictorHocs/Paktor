@@ -41,6 +41,25 @@
         return scope.$on('resize', resize);
       }
     };
+  }).directive('fitInWin', function($timeout) {
+    return function(scope, element) {
+      var resize;
+      resize = function() {
+        if (scope.tick) {
+          $timeout.cancel(scope.tick);
+        }
+        return scope.tick = $timeout(function() {
+          var height, innerHeight;
+          height = element[0].getBoundingClientRect().height;
+          innerHeight = window.innerHeight || document.documentElement.clientHeight;
+          if (height < innerHeight) {
+            return console.log('enlarge...');
+          }
+        }, 1000);
+      };
+      resize();
+      return scope.$on('resize', resize);
+    };
   });
 
 }).call(this);

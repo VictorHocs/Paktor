@@ -34,4 +34,17 @@ angular.module('PaktorApp',
       scope.$apply()
     $timeout resize, if scope.delay then scope.delay * 1 else 1000
     scope.$on 'resize', resize
+).directive('fitInWin', ($timeout)->
+  (scope, element)->
+    resize = ->
+      $timeout.cancel scope.tick if scope.tick
+      scope.tick = $timeout ->
+        {height} = element[0].getBoundingClientRect()
+        innerHeight = window.innerHeight or document.documentElement.clientHeight
+        if height < innerHeight
+          console.log 'enlarge...'
+      , 1000
+    resize()
+    scope.$on 'resize', resize
 )
+
