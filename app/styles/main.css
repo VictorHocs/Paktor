@@ -166,6 +166,10 @@ h2 {
     margin-right: 20px;
 }
 
+p.introduce{
+    color:#464963; padding-top:20px; font-size:21px; font-family:'BrandonText-Thin_0'; font-weight:900;
+}
+
 .btn1 {
     background-color: #3d3f57;
     border: 2px solid #46c8a8;
