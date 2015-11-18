@@ -9,6 +9,7 @@
     "angular-ui-router": "0.2.15",
     "ng-ScrollSpy.js": "*",
     "json3": "~3.3.1",
+    "angular-retina": "0.3.3",
     "es5-shim": "~3.1.0"
   },
   "homepage": "https://github.com/VictorHocs/Paktor",

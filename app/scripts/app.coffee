@@ -1,5 +1,5 @@
 angular.module('PaktorApp',
-  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy'])
+  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy','ngRetina'])
 .run(($rootScope, $window)->
   angular.element($window).on 'resize scroll', ->
     $rootScope.$broadcast 'resize'
