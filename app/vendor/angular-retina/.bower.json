@@ -30,6 +30,6 @@
     "commit": "6907bf697f3d47fdeb5248465b67ba1cba9f7846"
   },
   "_source": "git://github.com/jrief/angular-retina.git",
-  "_target": "*",
+  "_target": "0.3.3",
   "_originalSource": "angular-retina"
 }

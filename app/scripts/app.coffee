@@ -17,6 +17,9 @@ angular.module('PaktorApp',
 ).controller('ModalVideoInstanceCtrl', ($modalInstance)->
   @close = -> $modalInstance.dismiss 'cancel'
   return
+).controller('HomeCtrl', ()->
+  console.log 'home'
+  return
 )
 .directive('clickToTop', ->
   (scope, element)->

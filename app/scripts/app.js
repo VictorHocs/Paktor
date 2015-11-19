@@ -16,6 +16,8 @@
     this.close = function() {
       return $modalInstance.dismiss('cancel');
     };
+  }).controller('HomeCtrl', function() {
+    console.log('home');
   }).directive('clickToTop', function() {
     return function(scope, element) {
       return element.on('click', function() {
