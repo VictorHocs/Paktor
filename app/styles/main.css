@@ -119,16 +119,8 @@ body {
     }
 }
 
-h1 {
+h1 ,h2{
     font-family: 'Aver Bold';
-    font-style: italic;
-    font-weight: bold;
-}
-
-h2 {
-    font-family: 'Aver Bold';
-    font-weight: bold;
-    font-style: italic;
 }
 
 .carousel-inner .item .say {
@@ -213,6 +205,36 @@ p.introduce{
 .blog-content {
     background-color: rgba(34, 34, 38, 0.60);
     color: white;
+}
+
+.news{
+    padding-top: 30px;
+}
+
+.news .date {
+    font-family: BrandonText-Bold;
+    font-size: 15px;
+    color: #5d5e71;
+}
+
+.news .title {
+    color: #403f43;
+}
+
+.news .content {
+    font-size: 20px;
+    padding-top: 20px;
+    color: #5d5e71;
+    padding-bottom: 20px;
+}
+
+.news .read-more {
+    color: #403f43;
+    font-family: BrandonText-Bold;
+}
+
+.news .col-md-10{
+    padding-top: 60px; padding-bottom:40px;
 }
 
 /* scroll style from https://cloud.google.com/pricing/ */
