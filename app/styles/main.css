@@ -104,7 +104,7 @@ body {
     background-color: gray;
 }
 
-.about .carousel-indicators .active {
+.about .carousel-indicators .active,.our-values .carousel-indicators .active{
     border: 2px solid #49e2b7;
     background-color: white;
 }
@@ -265,6 +265,10 @@ textarea:focus {
 /*override start*/
 .carousel-control.left, .carousel-control.right {
     background: none;
+}
+
+.our-values .carousel-inner{
+    padding: 0 0 40px 0;background: #ebeef4;
 }
 
 /*override end*/
