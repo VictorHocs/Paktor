@@ -288,6 +288,16 @@ textarea:focus {
 a.email{
     color: #40dbac;
 }
+.show-more{
+    margin-top: 40px;
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    font-size: 18px;
+    border: 2px solid #41425a;
+    font-family: BrandonText-Bold;
+    letter-spacing: 3px;
+}
 /*override start*/
 .carousel-control.left, .carousel-control.right {
     background: none;
