@@ -284,6 +284,10 @@ textarea:focus {
     border-color:#ceced5;
     box-shadow: none;
 }
+
+a.email{
+    color: #40dbac;
+}
 /*override start*/
 .carousel-control.left, .carousel-control.right {
     background: none;
