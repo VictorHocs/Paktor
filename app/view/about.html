@@ -11,6 +11,9 @@
     <div class="scroll-nav-item-container" data-scrollspy-listen="p5" ng-click="go('p5')">
         <div class="scroll-nav-item"></div>
     </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p6" ng-click="go('p6')">
+        <div class="scroll-nav-item"></div>
+    </div>
 </div>
 
 <!-- /.container -->
@@ -53,7 +56,7 @@
         </uib-slide>
     </uib-carousel>
 </div>
-<div class="container">
+<div class="container" data-scrollspy-broadcast id="p3">
     <h2 style="text-align: center;padding: 70px;font-size: 45px;">About us</h2>
     <div class="row" style="padding-bottom: 60px;">
         <div class="col-md-6 text-center">
@@ -68,7 +71,7 @@
         </div>
     </div>
 </div>
-<div style="background: #ebeef4;text-align: center;padding: 70px;">
+<div style="background: #ebeef4;text-align: center;padding: 70px;" id="p4" data-scrollspy-broadcast>
     <h2 style="font-size: 45px;">Our values  </h2>
 </div>
 <uib-carousel class="our-values ">
@@ -124,7 +127,7 @@
 <div style="background: #ebeef4;padding: 30px;text-align: center;font-size: 30px;font-style: italic;font-weight: 400;padding: 70px;">
 </div>
 
-<div class="jumbotron" id="p4" data-scrollspy-broadcast style="background-color: white;">
+<div class="jumbotron" id="p5" data-scrollspy-broadcast style="background-color: white;">
     <div class="container" style="background-color:white;padding-bottom: 60px;">
         <div class="row">
             <div class="col-md-12">
@@ -318,7 +321,7 @@
         </div>
     </div>
 </div>
-<div class="jumbotron" data-scrollspy-broadcast id="p5" style="background: #403f43;">
+<div class="jumbotron" data-scrollspy-broadcast id="p6" style="background: #403f43;">
     <div class="text-center">
         <h2 style="font-size: 45px;font-style: italic;padding: 0 0 30px; color: #6c6f7d;">Where we mostly are.</h2>
 
