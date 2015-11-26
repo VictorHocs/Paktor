@@ -38,6 +38,9 @@ angular.module('PaktorApp')
     }).state('privacy', {
       url: '/privacy'
       templateUrl: 'view/privacy.html'
+    }).state('faq', {
+      url: '/faq'
+      templateUrl: 'view/faq.html'
     }).state('download', {
       url: '/download'
       templateUrl: 'view/download.html'
