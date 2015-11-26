@@ -151,19 +151,40 @@ module.exports = function (grunt) {
             }
         },
 
+
+        uglify: {
+            core: {
+                options: {
+                    mangle: true
+                },
+                files: {
+                    "app/scripts/dist.js": [
+                        'app/vendor/angular/angular.js',
+                        'app/vendor/angular-animate/angular-animate.js',
+                        'app/vendor/angular-bootstrap/ui-bootstrap-tpls.js',
+                        'app/vendor/angular-ui-router/release/angular-ui-router.js',
+                        'app/vendor/ng-ScrollSpy.js/src/ng-ScrollSpy.js',
+                        'app/vendor/angular-retina/build/angular-retina.js',
+                        //'app/scripts/app.js',
+                        //'app/scripts/route.js',
+                        //'app/scripts/directives/anchor_smooth_scroll.js',
+                        "app/vendor/jquery/dist/jquery.js",
+                        "app/vendor/bootstrap/dist/js/bootstrap.js"
+
+                    ]
+                }
+            }
+        },
+
         // ngmin tries to make the code safe for minification automatically by
         // using the Angular long form for dependency injection. It doesn't work on
         // things like resolve or inject so those have to be done manually.
         ngmin: {
-            dist: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: '.tmp/concat/scripts',
-                        src: 'scripts.js',
-                        dest: '.tmp/concat/scripts'
-                    }
-                ]
+            controllers: {
+                expand: true,
+                cwd: 'app/scripts',
+                src: ['app.js','route.js'],
+                dest: 'app/scripts'
             }
         },
 
@@ -207,6 +228,17 @@ module.exports = function (grunt) {
             html: ['<%= yeoman.dist %>/index.html'],
             options: {
                 assetsDirs: ['<%= yeoman.dist %>']
+            }
+        },
+
+        cssmin: {
+            core: {
+                files: {
+                    "app/styles/dist.css": [
+                        "app/vendor/bootstrap/dist/css/bootstrap.css",
+                        "app/styles/main.css"
+                    ]
+                }
             }
         },
 
@@ -266,6 +298,9 @@ module.exports = function (grunt) {
         'connect:test',
         'karma'
     ]);
+
+    // Dist task
+    grunt.registerTask('dist', ['ngmin', 'uglify']);
 
     grunt.registerTask('build', [
         'clean:dist',
