@@ -158,19 +158,21 @@ module.exports = function (grunt) {
                     mangle: true
                 },
                 files: {
-                    "app/scripts/dist.js": [
+                    "app/scripts/3rd.js": [
                         'app/vendor/angular/angular.js',
                         'app/vendor/angular-animate/angular-animate.js',
                         'app/vendor/angular-bootstrap/ui-bootstrap-tpls.js',
                         'app/vendor/angular-ui-router/release/angular-ui-router.js',
                         'app/vendor/ng-ScrollSpy.js/src/ng-ScrollSpy.js',
                         'app/vendor/angular-retina/build/angular-retina.js',
-                        //'app/scripts/app.js',
-                        //'app/scripts/route.js',
-                        //'app/scripts/directives/anchor_smooth_scroll.js',
                         "app/vendor/jquery/dist/jquery.js",
                         "app/vendor/bootstrap/dist/js/bootstrap.js"
 
+                    ],
+                    "app/scripts/dist.js": [
+                        'app/scripts/app.js',
+                        'app/scripts/route.js',
+                        'app/scripts/directives/anchor_smooth_scroll.js'
                     ]
                 }
             }
@@ -183,7 +185,7 @@ module.exports = function (grunt) {
             controllers: {
                 expand: true,
                 cwd: 'app/scripts',
-                src: ['app.js','route.js'],
+                src: ['app.js','route.js','directives/anchor_smooth_scroll.js'],
                 dest: 'app/scripts'
             }
         },
