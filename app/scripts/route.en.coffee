@@ -4,10 +4,10 @@ angular.module('PaktorApp')
   $stateProvider
   .state('home', {
       url: '/home'
-      templateUrl: 'view/home.html'
+      templateUrl: 'view/en/home.html'
     }).state('about', {
       url: '/about'
-      templateUrl: 'view/about.html',
+      templateUrl: 'view/en/about.html',
       controller: ($scope, $location, $anchorScroll)->
         $scope.showMore = ->
           if !$scope.p1
@@ -19,30 +19,30 @@ angular.module('PaktorApp')
           $anchorScroll()
     }).state('blog', {
       url: '/blog'
-      templateUrl: 'view/blog.html'
+      templateUrl: 'view/en/blog.html'
     }).state('gaigai', {
       url: '/gaigai'
-      templateUrl: 'view/gaigai.html'
+      templateUrl: 'view/en/gaigai.html'
     }).state('career', {
       url: '/career'
-      templateUrl: 'view/career.html'
+      templateUrl: 'view/en/career.html'
     }).state('contact', {
       url: '/contact'
-      templateUrl: 'view/contact.html'
+      templateUrl: 'view/en/contact.html'
     }).state('web_app', {
       url: '/web_app'
-      templateUrl: 'view/web_app.html'
+      templateUrl: 'view/en/web_app.html'
     }).state('term', {
       url: '/term'
-      templateUrl: 'view/term.html'
+      templateUrl: 'view/en/term.html'
     }).state('privacy', {
       url: '/privacy'
-      templateUrl: 'view/privacy.html'
+      templateUrl: 'view/en/privacy.html'
     }).state('faq', {
       url: '/faq'
-      templateUrl: 'view/faq.html'
+      templateUrl: 'view/en/faq.html'
     }).state('download', {
       url: '/download'
-      templateUrl: 'view/download.html'
+      templateUrl: 'view/en/download.html'
     })
 
