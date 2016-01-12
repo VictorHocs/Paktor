@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Paktor</title>
+  <meta name="description" content="Paktor is a popular social community">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="asian, dates, dating, flirt, flirtatious, girl, guy, marriage, marrying, marry, kiss, kisses, first kiss, second date, love interest, signs, signs of love, singapore, hot, love, meetup, men, xin, sgag, meet woman, meet women, meet guys, meet men, meet man, love, find love, hot, meet strangers, meet stranger, find date, first date, romance, korea, korean, korean girls, korean men, korean ladies, matchmake, match make, chatup, dating app, romance app, love app, true love, fate, fated, profile, profile picture, handsome, chiobu, chio bu, yandao, taiwan, taiwanese men, taiwanese women, taiwanese girls, taiwanese man, dating spots, dating areas">
+  <meta name="description" content="You no longer have to awkwardly introduce yourself to someone you like to date, chat or meet. #1 Asian dating social app. It&#039;s fun, easy free!"/>
+  <script src="scripts/pace.min.js"></script>
+
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles/main.css">
+
+  <link rel="shortcut icon" href="img/favicon.ico"/>
+</head>
+<body ng-app="PaktorApp" debug-scope>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="height: 60px;">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" data-ui-sref="home">
+        <img src="img/logo.png" style="height: 40px;"/>
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" style="text-transform: uppercase;margin-top: 9px;">
+        <li><a ui-sref-active="focus" data-ui-sref="home">Home</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="about">TENTANG</a></li>
+        <!--<li><a ui-sref-active="focus" data-ui-sref="blog">blog</a></li>-->
+        <li><a ui-sref-active="focus" data-ui-sref="gaigai">GaiGai</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="career">KARIR</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="contact">KONTAK</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="web_app">APLIKASI WEB</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<ui-view></ui-view>
+
+<div style="background: #7e70c1;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center" style="color: white;">
+				<div class=" img-wrap" style="padding: 30px;border-bottom: white solid 1px;">
+					<a href="mailto:help@gopaktor.com"><img src="img/Mail.png" alt="#"/></a>
+					<a href="https://www.youtube.com/user/PaktorAsiaLaunch"><img src="img/Facebook.png"/></a>
+					<a href="https://twitter.com/gopaktor"><img src="img/Twitter.png"></a>
+					<a href="https://www.youtube.com/user/PaktorAsiaLaunch"><img src="img/Youtube.png"></a>
+				</div>
+				<div style="padding: 30px; font-family:'Brandon Text Medium'">
+					<a style="color:white; padding-right:20px;" ui-sref="download">DOWNLOAD APP</a>
+					<a style="color:white; padding-left:20px;" ui-sref='contact'>HUBUNGI KAMI</a>
+				</div>
+				<div style="padding-bottom: 40px;font-family:'Brandon Text Medium'">
+					<p>
+            © Paktor Pte. Ltd. All Rights Reserved.  |
+            <a click-to-top style="color:white;" data-ui-sref="term">Syarat & Ketentuan</a>  |
+            <a click-to-top style="color:white;" data-ui-sref="privacy">Kebijakan Privasi</a> |
+            <a click-to-top style="color:white;" data-ui-sref="faq">FAQ</a>
+          </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--[if lt IE 9]>
+<script src="vendor/es5-shim/es5-shim.min.js"></script>
+<script src="vendor/json3/lib/json3.min.js"></script>
+<![endif]-->
+<!--<script src="vendor/angular/angular.js"></script>-->
+<!--<script src="vendor/angular-animate/angular-animate.js"></script>-->
+<!--<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>-->
+<!--<script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>-->
+<!--<script src="vendor/ng-ScrollSpy.js/src/ng-ScrollSpy.js"></script>-->
+<!--<script src="vendor/angular-retina/build/angular-retina.js"></script>-->
+<script src="scripts/3rd.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/route.in.js"></script>
+<script src="scripts/directives/anchor_smooth_scroll.js"></script>
+<!--<script src="scripts/directives/DebugScope.js"></script>&lt;!&ndash; TODO need to remove when deploy &ndash;&gt;-->
+<!--<script src="vendor/jquery/dist/jquery.js"></script>-->
+<!--<script src="vendor/bootstrap/dist/js/bootstrap.js"></script>-->
+
+
+
+</body>
+</html>

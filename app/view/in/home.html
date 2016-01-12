@@ -1,0 +1,213 @@
+<div class="scroll-nav-container hidden-sm hidden-xs" style="height: 145px;">
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p1">
+        <div class="scroll-nav-item" anchor-smooth-scroll="p1"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p2">
+        <div class="scroll-nav-item" anchor-smooth-scroll="p2"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p3">
+        <div class="scroll-nav-item" anchor-smooth-scroll="p3"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p5">
+        <div class="scroll-nav-item" anchor-smooth-scroll="p5"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p6">
+        <div class="scroll-nav-item" anchor-smooth-scroll="p6"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p7">
+        <div class="scroll-nav-item" anchor-smooth-scroll="p7"></div>
+    </div>
+    <div class="scroll-nav-item-container" data-scrollspy-listen="p8">
+        <div class="scroll-nav-item" anchor-smooth-scroll="p8"></div>
+    </div>
+</div>
+
+<div id="p1" data-scrollspy-broadcast class="jumbotron">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-2">
+                <img src="img/homepageword.png" class="paktor">
+
+                <h2 style="padding-top:20px;">
+                    Cara termudah untuk dapatkan teman-teman baru
+                </h2>
+
+                <div style="height: 170px;margin-top: 40px;">
+                    <button type="button"
+                            class="btn btn-default btn1" ng-show="!showStore" ng-click="showStore=true">
+                        DOWNLOAD SEKARANG
+                    </button>
+                    <div class="link-store" ng-show="showStore">
+                        <a href="https://itunes.apple.com/sg/app/paktor-chat-friends-meet-new/id654972611?mt=1"
+                           target="_blank" style="margin-right: 30px;">
+                            <img src="img/btn_app_1.png">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.paktor&amp;referrer=utm_source%3Dgopaktor_com%26utm_medium%3Dhome_page%26utm_campaign%3Dplaystore_button"
+                           target="_blank">
+                            <img src="img/btn_google_1.png">
+                        </a>
+                    </div>
+                </div>
+                <div><img src="img/mouseanimation.gif" alt="" style="height: 26px;margin-right: 10px;"/>
+                    <!--scroll down to see more-->
+                </div>
+            </div>
+            <div class="col-md-5 hidden-sm hidden-xs" style="overflow: hidden;">
+                <img src="img/phone@2x.png" width="360"  class="img-responsive"
+                     alt="Responsive image">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/ng-template" id="myModalContent.html">
+    <div style="position: relative;">
+        <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
+              style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
+
+        <video style="width: 100%;" controls>
+            <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4"
+                    type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+</script>
+
+<div class="fullcontainer hidden-xs" ng-controller="ModalVideoCtrl as video">
+    <img ng-click="video.open()" src="img/video.png" class="img-responsive"
+         style="background-size:cover; width:100%;cursor: pointer;" alt="">
+</div>
+
+<video class="visible-xs" style="width: 100%;" controls>
+    <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4"
+            type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<div id="p2" data-scrollspy-broadcast class="jumbotron intro" style="background:white;padding-bottom: 0px;">
+    <div class="container" in-viewport="isIn2" delay="3000">
+        <div class="row">
+            <div class="col-md-5 col-md-push-7" style="overflow:hidden;">
+                <h2 class="t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" style="color:#464963;">
+                    Ke kiri atau kanan
+
+                </h2>
+
+                <p class="t1 p2-right-start introduce p2-right-end" ng-class="{'p2-right-end':isIn}">
+                    Perubahan hidup yang ajaib hanya sejauh swipe.
+                    Swipe kanan untuk menyukai dan swipe kiri untuk melewatkan.</p>
+            </div>
+            <div class="col-md-4 col-md-pull-3 text-center">
+                <img ng-src="img/phone.png" width="338" height="647" class="img-responsive t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}"
+                     alt="Responsive image">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="p3" data-scrollspy-broadcast class="jumbotron intro" style="background:#f0f1f7;padding-bottom: 0px;">
+    <div class="container" in-viewport="isIn2" delay="3000">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-2">
+                <h2 class="t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" style="color:#464963;">
+                    Anda dapat Match!
+
+
+                </h2>
+
+                <p class="t1 p2-left-start introduce p2-left-end" ng-class="{'p2-left-end':isIn}">
+                    Ketika seseorang menyukai Anda juga, Anda akan dipasangkan dengan dia.
+
+                    Paktor menyatukan orang-orang dengan minat yang sama.
+                </p>
+            </div>
+            <div class="col-md-5 text-center" style="overflow: hidden;">
+                <img ng-src="img/phone2.png" width="338" height="647" class="img-responsive t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="p5" data-scrollspy-broadcast class="jumbotron intro" style="background:white;padding-bottom: 0px; ">
+    <div class="container" in-viewport="isIn2" delay="3000">
+        <div class="row">
+            <div class="col-md-5 col-md-push-7" style="overflow:hidden;">
+                <h2 class="t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" style="color:#464963;">Mulai sebuah percakapan.
+
+                    </h2>
+
+                <p class="t1 p2-right-start introduce p2-right-end" ng-class="{'p2-right-end':isIn}">
+                    Orang yang cepat bergerak selalu mendapatkan keuntungan.
+                    Jadilah aktif dan mulai obrolan.</p>
+            </div>
+            <div class="col-md-4 col-md-pull-3 text-center">
+                <img ng-src="img/phone3.png" width="338" height="647" class="img-responsive t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="p6" data-scrollspy-broadcast class="jumbotron intro" style="background:#f0f1f7;padding-bottom: 0px;">
+    <div class="container" in-viewport="isIn2" delay="3000">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-2">
+                <h2 class="t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" style="color:#464963;">
+                    Kirim hadiah atau pesan langsung
+
+
+                </h2>
+
+                <p class="t1 p2-left-start introduce p2-left-end" ng-class="{'p2-left-end':isIn}">
+                    Jangan menunggu cinta. Lebih cepat kenalan dengan mengirimkan hadiah atau pesan langsung ke teman-teman baru di Paktor.
+                </p>
+            </div>
+            <div class="col-md-5 text-center" style="overflow: hidden;">
+                <img ng-src="img/phone4.png" width="338" height="653" class="img-responsive t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="p7" data-scrollspy-broadcast class="jumbotron" style="background:#403f43;padding-bottom: 0px;">
+    <div class="container">
+        <div class="row" style="text-align:center;">
+            <div class="col-md-12"><h2 style="color:#6c6f7d; padding-bottom: 40px;font-size: 30px;">Bermain dengan fitur filter, cari orang yang paling cocok untuk Anda.</h2></div>
+        </div>
+        <div class="row" style="text-align:center;">
+            <div class="col-md-12">
+                <img ng-src="img/pic.png" width="1202" height="556" class="img-responsive hidden-xs" alt="Responsive image">
+                <img src="img/web_mobile.png" class="img-responsive visible-xs" alt="Responsive image">
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="p8" data-scrollspy-broadcast class="jumbotron" style="background:white;">
+    <div class="container" style="padding-top:80px;padding-bottom:80px;">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 tips">
+                <h2 style="color:#464963; ">Hot tips</h2>
+
+                <p class="introduce">Rasakan berbagai manfaat dari program keanggotaan kami dan dapatkan akses ke berbagai keuntungan yang akan membuat pengalaman Anda di Paktor makin luar biasa!</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                <ul class="list-unstyled list">
+                    <li>
+                        <img src="img/message.png"> Kirim pesan & hadiah kepada siapapun yang Anda inginkan
+                    </li>
+                    <li>
+                        <img src="img/heart.png"> Lihat siapa yang telah melihat & menyukai Anda
+                    </li>
+                    <li>
+                        <img src="img/lock.png"> Aktifkan filter yang lebih detil seperti: pekerjaan, tinggi badan
+                    </li>
+                    <li>
+                        <img src="img/eye.png"> Bermain tanpa dilihat orang lain
+                    </li>
+                    <li>
+                        <img src="img/clock.png"> Lihat waktu "terakhir dilihat" dari match Anda
+                    </li>
+                    <li>
+                        <img src="img/circle.png"> Dapatkan 1,000 poin Paktor gratis setiap hari
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
