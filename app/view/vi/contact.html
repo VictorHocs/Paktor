@@ -1,0 +1,35 @@
+
+<div class="jumbotron" id="content" style="padding-bottom: 130px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10"><h1>Nói Xin Chào</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+                <div class="input-group input-group-lg"style="width: 100%;">
+                    <input data-ng-model="email.name" type="text" class="form-control" placeholder="Tên" style="margin-top: 20px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400; color:#ceced5;">
+                </div>
+                <div class="input-group input-group-lg" style="width: 100%;">
+                    <input ng-model="email.subject" type="text" class="form-control" placeholder="Chủ đề" style="margin-top: 30px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400;color:#ceced5;">
+                </div>
+                <textarea data-ng-model="email.body" placeholder="Tin nhắn" rows="5" style="width: 100%;margin-top: 30px;padding: 12px;background-color: #3d3f57;font-size: 18px;font-weight: 400; color:#ceced5;">Tin nhắn</textarea>
+                <a class="btn btn-default"
+                   style="margin-top:30px;width: 100%;background-color: #3d3f57;font-size: 18px;font-weight: 400;border: 2px solid #46c8a8; color:#46c8a8;font-weight: bold;  font-family: Brandon Text;"
+                   href="mailto:help@gopaktor.com?subject={{email.subject}}%20from%20{{email.name}}&amp;body={{email.body}}">GỬI</a>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <h3 style="color:#46c8a8;font-family:Brandon Text Medium;">HỖ TRỢ</h3>
+                <p style="font-family:'BrandonText-Thin_0'; font-weight:900;">help@gopaktor.com</p>
+                <h3 style="color:#46c8a8;font-family:'Brandon Text Medium'; ">HỢP TÁC</h3>
+                <p style="font-family:'BrandonText-Thin_0'; font-weight:900;">press@gopaktor.com</p>
+                <h3 style="color:#46c8a8;font-family:'Brandon Text Medium';">NHẬN XÉT VÀ GÓP Ý</h3>
+                <p style="font-family:'BrandonText-Thin_0'; font-weight:900;">help@gopaktor.com</p>
+                <h3 style="color:#46c8a8;font-family:'Brandon Text Medium';">PRESS</h3>
+                <p style="font-family:'BrandonText-Thin_0'; font-weight:900;">partners@gopaktor.com</p>
+            </div>
+        </div>
+    </div>
+</div>
