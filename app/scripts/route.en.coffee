@@ -2,6 +2,10 @@ angular.module('PaktorApp')
 .config ($stateProvider, $urlRouterProvider)->
   $urlRouterProvider.otherwise('/home')
   $stateProvider
+  .state('home_pre', {
+    url: '/home_pre'
+    templateUrl: 'view/en/home_pre.html'
+  })
   .state('home', {
       url: '/home'
       templateUrl: 'view/en/home.html'

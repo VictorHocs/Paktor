@@ -1,5 +1,5 @@
 angular.module('PaktorApp',
-  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy','ngRetina'])
+  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy', 'ngRetina'])
 .run(($rootScope, $window)->
   angular.element($window).on 'resize scroll', ->
     $rootScope.$broadcast 'resize'
@@ -17,6 +17,11 @@ angular.module('PaktorApp',
 ).controller('ModalVideoInstanceCtrl', ($modalInstance)->
   @close = -> $modalInstance.dismiss 'cancel'
   return
+).controller('SendSMSCtrl', ($scope, $http)->
+  $scope.countryCode = '65'
+  $scope.sendDownloadLink = ->
+    $http.post('http://www.letsgaigai.com/sendDownloadLink', {mobile: $scope.countryCode + $scope.mobile}).success (success)->
+      $scope.sent = success
 )
 .directive('clickToTop', ->
   (scope, element)->
