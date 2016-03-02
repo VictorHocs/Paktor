@@ -51,6 +51,9 @@
     }).state('download', {
       url: '/download',
       templateUrl: 'view/en/download.html'
+    }).state('stories', {
+      url: '/stories',
+      templateUrl: 'view/en/stories.html'
     });
   });
 
