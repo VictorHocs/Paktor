@@ -163,6 +163,10 @@ body {
     margin: 38px auto 0 auto;
 }
 
+.success-story-dialog{
+    overflow: hidden;
+}
+
 .carousel-indicators li {
     border: none;
     background-color: #727272;
