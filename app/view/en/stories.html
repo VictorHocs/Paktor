@@ -1,102 +1,45 @@
 <div class="jumbotron" style="padding-bottom: 0px;" ng-controller="ModalVideoCtrl as video">
-    <div class="container">
+    <div class="container" ng-controller="StoryCtrl">
         <div class="row" style="margin-bottom: 60px;">
             <h1 class="text-center" style="font-size:60px;padding: 0 0 34px;">Our successful stories</h1>
-
             <div class="col-md-6">
-                <div class="row">
-                    <div class="col-sm-6 ">
-                        <div class="card">
-                            <img src="../../img/story1.png" alt="">
-                            <div>
-                                I was studying in Singapore in 2014, At that time, I couldn't help but find it difficult to
-                                date with anyone...
-                            </div>
-                            <p>Tu and Tri(married)</p>
+                <div class="col-sm-6" ng-repeat="s in stories" ng-mouseover="changeStory(s)">
+                    <div class="card">
+                        <img src="http://placehold.it/80x80" alt="">
+                        <div>
+                            {{s.story.substr(0,70)}}...
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <img src="../../img/story1.png" alt="">
-
-                            <div>
-                                I was studying in Singapore in 2014, At that time, I couldn't help but find it difficult
-                                to
-                                date with anyone...
-                            </div>
-                            <p>Tu and Tri(married)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 ">
-                        <div class="card">
-                            <img src="../../img/story1.png" alt="">
-
-                            <div>
-                                I was studying in Singapore in 2014, At that time, I couldn't help but find it difficult
-                                to
-                                date with anyone...
-                            </div>
-                            <p>Tu and Tri(married)</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <img src="../../img/story1.png" alt="">
-
-                            <div>
-                                I was studying in Singapore in 2014, At that time, I couldn't help but find it difficult
-                                to
-                                date with anyone...
-                            </div>
-                            <p>Tu and Tri(married)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 ">
-                        <div class="card">
-                            <img src="../../img/story1.png" alt="">
-
-                            <div>
-                                I was studying in Singapore in 2014, At that time, I couldn't help but find it difficult
-                                to
-                                date with anyone...
-                            </div>
-                            <p>Tu and Tri(married)</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <img src="../../img/story1.png" alt="">
-
-                            <div>
-                                I was studying in Singapore in 2014, At that time, I couldn't help but find it difficult
-                                to
-                                date with anyone...
-                            </div>
-                            <p>Tu and Tri(married)</p>
-                        </div>
+                        <p>{{s.name}}</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="col-sm-12">
                     <div class="one-story">
-                        <img src="../../img/story1.png" alt="">
-                        <div>
-                            I was studying in Singapore in 2014, At that time, I couldn't help but find it difficult
-                            to
-                            date with anyone...
+                        <img src="http://placehold.it/200x200" alt="">
+                        <div ng-bind-html="currentStory.story">
                         </div>
-                        <p>Tu and Tri(married)</p>
+                        <p>{{currentStory.name}}</p>
                         <a href="javascript:void(0);" ng-click="video.open()">READ MORE</a>
                     </div>
                 </div>
             </div>
         </div>
-
+        <script type="text/ng-template" id="myModalContent.html">
+            <div style="position: relative;">
+        <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
+              style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
+                <div class="success-story-dialog">
+                    <img src="http://placehold.it/350x430" alt="" class="pull-left" style="margin-right: 25px;">
+                    <div style="padding-top: 25px;">
+                        <img src="http://placehold.it/140x140" class="pull-left" alt="" style="margin-right: 20px;">
+                        <p style="font-size: 30px;color: grey;padding: 30px;">{{currentStory.name}}</p>
+                        <div ng-bind-html="currentStory.story">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
     </div>
 </div>
 <div class="container-fruit ">
@@ -107,21 +50,3 @@
     </div>
 </div>
 
-<script type="text/ng-template" id="myModalContent.html">
-    <div style="position: relative;">
-        <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
-              style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
-        <div class="success-story-dialog">
-            <img src="../../img/07.png" alt="" class="pull-left" style="margin-right: 25px;">
-            <div style="padding-top: 25px;">
-                <img src="../../img/08.png" class="pull-left" alt="" style="margin-right: 20px;">
-                <p style="font-size: 30px;color: grey;padding: 30px;">Tu and Tri <br> (Married)</p>
-                <div>
-                    I was studying in Singapore in 2014. At that time, I couldn't help but find it difficult to date with anyone. Everyone was so busy taking care of their life. I tried Paktor and expand the search filter to Vietnam, where I would love to come back after finishing MBA. It has been the most rightful decision that I have ever made. It took me sometime to get familiar with app, but after becoming Premium user, it became much easier. I actually get to chat with a beautiful, out-going and attractive girl, whom then become my wife now. We keep in touch with each other on Paktor for the rest of the time I stayed in Singapore. I knew, she's the one. We got married right after I came back to Vietnam.
-
-                    Everything seemed like a dream to me, went on the Internet, signed up a dating app and get the most beautiful woman of my life. Dreams do come true, thanks Paktor.
-                </div>
-            </div>
-        </div>
-    </div>
-</script>
