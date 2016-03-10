@@ -101,12 +101,10 @@ body {
 
 .card{
     padding: 15px 10px 5px 10px;
-    background: #7160b7;
     color: white;
     font-size: 12px;
     text-align: center;
     margin-top: 25px;
-    cursor: pointer;
 }
 
 .card img{
@@ -117,32 +115,30 @@ body {
 
 .card p{margin: 10px;font-size: 18px;}
 
-.one-story {
-    margin-top: 25px;
-    background: #fb6a6f;
+
+.card a {
     color: white;
-    text-align: center;
-    padding: 0 15px 20px;
-}
-
-.one-story img {
-    margin: 29px 0 28px 0;
-}
-
-.one-story p {
-    margin: 10px;
-    font-size: 18px;
-}
-
-.one-story a {
-    color: black;
-    font-size: 20px;
-    background: #fcb0ac;
+    font-size: 16px;
+    background: #3d3f56;
     font-family: BrandonText-Bold;
     padding: 8px 20px;
     display: block;
     margin: 25px auto 5px auto;
     width: 180px;
+}
+
+.Singapore{
+    background: #fb6a6f;
+}
+.Vietnam{
+    background: #7160b7;
+}
+.Malaysia{
+    background: #fdd277;
+    color: black;
+}
+.Indonesia{
+    background: #3b83a6;
 }
 
 .story_start{

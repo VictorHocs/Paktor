@@ -2,26 +2,14 @@
     <div class="container" ng-controller="StoryCtrl">
         <div class="row" style="margin-bottom: 60px;">
             <h1 class="text-center" style="font-size:60px;padding: 0 0 34px;">Our successful stories</h1>
-            <div class="col-md-6">
-                <div class="col-sm-6" ng-repeat="s in stories" ng-mouseover="changeStory(s)">
-                    <div class="card">
-                        <img ng-src="../../img/parters/{{s.index}}.1.jpg" alt="">
-                        <div>
-                            {{s.story.substr(0,70)}}...
-                        </div>
-                        <p>{{s.name}}</p>
+            <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s)">
+                <div class="card {{s.name.split('<')[0]}}">
+                    <img ng-src="../../img/parters/{{s.index}}.1.jpg" class="img-circle" alt="">
+                    <div>
+                        {{s.story.substr(0,70)}}...
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="col-sm-12">
-                    <div class="one-story">
-                        <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" alt="">
-                        <div ng-bind-html="currentStory.story">
-                        </div>
-                        <p>{{currentStory.name}}</p>
-                        <a href="javascript:void(0);" ng-click="video.open()">READ MORE</a>
-                    </div>
+                    <p ng-bind-html="s.name"></p>
+                    <a href="javascript:void(0);" ng-click="video.open()">READ MORE</a>
                 </div>
             </div>
         </div>
@@ -32,8 +20,8 @@
                 <div class="success-story-dialog">
                     <img ng-src="../../img/parters/{{currentStory.index}}.2.jpg" alt="" class="pull-left" style="margin-right: 25px;">
                     <div style="padding-top: 25px;">
-                        <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" class="pull-left" alt="" style="margin-right: 20px;width: 140px;height: 140px;">
-                        <p style="font-size: 30px;color: grey;padding: 30px;">{{currentStory.name}}</p>
+                        <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" class="pull-left img-circle" alt="" style="margin-right: 20px;width: 140px;height: 140px;">
+                        <p ng-bind-html="currentStory.name" style="font-size: 30px;color: grey;padding: 30px;"></p>
                         <div ng-bind-html="currentStory.story">
                         </div>
                     </div>
