@@ -156,13 +156,13 @@ body {
 
 .story_start a{
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     background: #fb6a6f;
     font-family: BrandonText-Bold;
     padding: 8px 20px;
     display: block;
     width: 180px;
-    margin: 30px auto 20px auto;
+    margin: 20px auto 10px auto;
 }
 
 .success-story-dialog{
