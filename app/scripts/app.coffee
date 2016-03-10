@@ -93,6 +93,8 @@ angular.module('PaktorApp',
       story: "A premium membership on Paktor gave me more opportunities to find a date. Me and my girlfriend met on Paktor and I thank God that I finally found someone who made my dreams come true. We've been dating for two months and we grow and grow and deepen our love.<br/><br/>Paktor had many fun features and easy to play!"
     }
   ]
+  for i in [1..$scope.stories.length]
+    $scope.stories[i - 1].index = i
   $rootScope.currentStory = $scope.stories[0]
   $scope.changeStory = (s)->
     $rootScope.currentStory = s

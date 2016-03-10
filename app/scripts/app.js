@@ -26,6 +26,7 @@
       });
     };
   }).controller('StoryCtrl', function($scope, $rootScope) {
+    var i, j, ref;
     $scope.stories = [
       {
         name: 'Singapore - Bryan & Vanessa (Dating)',
@@ -80,6 +81,9 @@
         story: "A premium membership on Paktor gave me more opportunities to find a date. Me and my girlfriend met on Paktor and I thank God that I finally found someone who made my dreams come true. We've been dating for two months and we grow and grow and deepen our love.<br/><br/>Paktor had many fun features and easy to play!"
       }
     ];
+    for (i = j = 1, ref = $scope.stories.length; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
+      $scope.stories[i - 1].index = i;
+    }
     $rootScope.currentStory = $scope.stories[0];
     return $scope.changeStory = function(s) {
       return $rootScope.currentStory = s;
