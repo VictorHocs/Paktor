@@ -1,5 +1,5 @@
 angular.module('PaktorApp',
-  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy', 'ngRetina','ngSanitize'])
+  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy','ngSanitize'])
 .run(($rootScope, $window)->
   angular.element($window).on 'resize scroll', ->
     $rootScope.$broadcast 'resize'
@@ -108,6 +108,11 @@ angular.module('PaktorApp',
       index: 14
       name: 'Malaysia <br/> Jake & Girlfriend (Dating)'
       story: "I met my girlfriend through Paktor. We started meeting each other after chatting for a few months and we are in a relationship since last Christmas.<br/><br/>I think Paktor is a pretty awesome app. It allows us to have the chance to start meeting people and find the right person. I liked you, you liked me too, so let's have a conversation!"
+    }
+    {
+      index: 18
+      name: 'Singapore <br/> Heng & Fiancé (Engaged)'
+      story: "I met my fiancé 3 years ago, on this app Paktor. We first hung out and we clicked. We have been friends for a month before we got together.<br/><br/>It's a great app. However, only if they can reduce the creepers on this app that would be better."
     }
   ]
   $scope.changeStory = (s)->
