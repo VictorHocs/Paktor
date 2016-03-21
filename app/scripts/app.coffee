@@ -31,7 +31,7 @@ angular.module('PaktorApp',
     }
     {
       index: 1
-      name: 'Singapore <br/> Bryan & Vanessa (Dating)'
+      name: 'Singapore <br/> Bryan & Venessa (Dating)'
       story: "We got matched on 29 Nov 2015 and I dropped her a text, beginning with the old cheesy mIRC era opening line.. \"\"A/S/L?\"\" and it was silent for a few hours until 11+ pm when she replied! We continued chatting and we met up on 11 Dec 2015 @ iDarts Safra Mt Faber. On 26 Dec 2015, I asked her to be my girlfriend and since then we are happily attached. 2 weeks ago, we spent our 1st Valentine's Day together and she had a sweet surprise from me. Today marks the 60th day we are together. I love you, Vanessa! <br/><br/> Paktor is a great platform for me to expand my social circle and meet potential partners. Without Paktor, I strongly believe that I would still be single and would have spent my Valentine's Day alone. Thank you Paktor for giving me the chance to meet my special one. :)"
     }
     {
