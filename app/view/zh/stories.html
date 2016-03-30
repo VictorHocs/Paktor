@@ -3,12 +3,12 @@
         <div class="row" style="margin-bottom: 60px;">
             <h1 class="text-center" style="font-size: 40px;padding: 0 0 7px;margin-top: 0px;">Our successful stories</h1>
             <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s)">
-                <div class="card {{s.name.en.split('<')[0]}}">
+                <div class="card {{s.name.tw.split('<')[0]}}">
                     <img ng-src="../../img/parters/{{s.index}}.1.jpg" class="img-circle" alt="">
                     <div>
-                        {{s.story.en.substr(0,70)}}...
+                        {{s.story.tw.substr(0,70)}}...
                     </div>
-                    <p ng-bind-html="s.name.en"></p>
+                    <p ng-bind-html="s.name.tw"></p>
                     <a href="javascript:void(0);" ng-click="video.open()">READ MORE</a>
                 </div>
             </div>
@@ -21,8 +21,8 @@
                     <img ng-src="../../img/parters/{{currentStory.index}}.2.jpg" alt="" class="pull-left" style="margin-right: 25px;">
                     <div style="padding-top: 25px;">
                         <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" class="pull-left img-circle" alt="" style="margin-right: 20px;width: 140px;height: 140px;">
-                        <p ng-bind-html="currentStory.name.en" style="font-size: 30px;color: grey;padding: 30px;"></p>
-                        <div ng-bind-html="currentStory.story.en">
+                        <p ng-bind-html="currentStory.name.tw" style="font-size: 30px;color: grey;padding: 30px;"></p>
+                        <div ng-bind-html="currentStory.story.tw">
                         </div>
                     </div>
                 </div>

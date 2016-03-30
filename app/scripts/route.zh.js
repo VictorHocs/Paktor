@@ -48,6 +48,9 @@
     }).state('download', {
       url: '/download',
       templateUrl: 'view/zh/download.html'
+    }).state('stories', {
+      url: '/stories',
+      templateUrl: 'view/zh/stories.html'
     });
   });
 
