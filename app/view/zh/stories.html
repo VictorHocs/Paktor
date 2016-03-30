@@ -1,7 +1,7 @@
 <div class="jumbotron" style="padding-bottom: 0px;" ng-controller="ModalVideoCtrl as video">
     <div class="container" ng-controller="StoryCtrl">
         <div class="row" style="margin-bottom: 60px;">
-            <h1 class="text-center" style="font-size: 40px;padding: 0 0 7px;margin-top: 0px;">Our successful stories</h1>
+            <h1 class="text-center" style="font-size: 40px;padding: 0 0 7px;margin-top: 0px;">Paktor的成功故事</h1>
             <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s)">
                 <div class="card {{s.name.tw.split('<')[0]}}">
                     <img ng-src="../../img/parters/{{s.index}}.1.jpg" class="img-circle" alt="">
@@ -9,7 +9,7 @@
                         {{s.story.tw.substr(0,70)}}...
                     </div>
                     <p ng-bind-html="s.name.tw"></p>
-                    <a href="javascript:void(0);" ng-click="video.open()">READ MORE</a>
+                    <a href="javascript:void(0);" ng-click="video.open()">閱讀更多</a>
                 </div>
             </div>
         </div>
@@ -32,9 +32,9 @@
 </div>
 <div class="container-fruit navbar-fixed-bottom">
     <div class="story_start">
-        <h1 style="font-size: 30px;margin-top: 0px;padding: 20px 0 0px 0;">How about you?</h1>
-        <p style="font-size: 16px;">Share your beautiful stories with Paktor!</p>
-        <a href="https://form.jotform.me/60248340267453" target="_blank">START NOW!</a>
+        <h1 style="font-size: 30px;margin-top: 0px;padding: 20px 0 0px 0;">你呢？</h1>
+        <p style="font-size: 16px;">跟Paktor 分享你那些美好的愛情故事吧！</p>
+        <a href="https://form.jotform.me/60271451644451" target="_blank">現在開始！</a>
     </div>
 </div>
 

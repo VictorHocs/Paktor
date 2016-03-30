@@ -72,11 +72,11 @@ angular.module('PaktorApp',
       index: 2
       name: {
         en:'Singapore <br/> Tricia & Mathew (Dating)'
-        tw:'Singapore <br/> Tricia & Mathew (Dating)'
+        tw:'Singapore <br/> Tricia & Mathew (熱戀中)'
       }
       story: {
         en:"I met my boyfriend, Matthew, through Paktor in July last year. Our first date was pretty cheesy, we met at a Starbucks in town and things started off from there. It's close to almost 6 months since he asked me to be his girlfriend. He's the best thing in my life and I couldn't be happier. <br/><br/>Until today, it still feels pretty surreal how Matthew and I met through Paktor. We started off not expecting anything to happen and ended up finding someone we wanna spend our entire life with. I'm very thankful for Paktor for creating the opportunity for Matthew and I to meet each other :)"
-        tw:"I met my boyfriend, Matthew, through Paktor in July last year. Our first date was pretty cheesy, we met at a Starbucks in town and things started off from there. It's close to almost 6 months since he asked me to be his girlfriend. He's the best thing in my life and I couldn't be happier. <br/><br/>Until today, it still feels pretty surreal how Matthew and I met through Paktor. We started off not expecting anything to happen and ended up finding someone we wanna spend our entire life with. I'm very thankful for Paktor for creating the opportunity for Matthew and I to meet each other :)"
+        tw:"去年7月，我在Paktor上遇到我現任男友 Matthew。第一次的約會地點其實滿無趣的，我們約在市中心的某間星巴克，然而這裡卻成為了故事的起點。<br/>距離他向我告白已經快要半年，如今他是我生命中最重要的人，沒有什麼事能比跟他在一起更快樂了！<br/><br/>直到今天，回想起當初我和Matthew在Paktor上相遇，還是感到很夢幻很不可思議。<br/>一開始我們對彼此其實都不抱有任何期待與想像，但最後我們卻發現彼此就是自己能依靠一輩子的對象。<br/><br/>真的非常感謝Paktor，是你讓我們找到彼此，遇見幸福 :)"
       }
     }
     {
@@ -182,11 +182,11 @@ angular.module('PaktorApp',
       index: 4
       name: {
         en:'Singapore <br/> Avian & Boyfriend (Dating)'
-        tw:'Singapore <br/> Avian & Boyfriend (Dating)'
+        tw:'Singapore <br/> Avian & 她的男友 (熱戀中)'
       }
       story: {
         en:"We first came across and \"\"Liked\"\" each other on Paktor in April 2014. After exchanging messages on Paktor for a while, we eventually exchanged phone numbers and began to text and call each other. I then plucked up my courage and asked her out to our first date on 3rd May 2014 to watch Show Luo's concert together with me. My heart was pounding out of my chest on that fateful day and I remember vividly that the first thing she ever said to me was \"\"Little boy\"\" as I was carrying a backpack with a Mickey Mouse plushie keychain.<br/><br/>Many dates proceeded thereafter and we officially got together on her birthday, 14th August 2014. It was one of the happiest moments of my life.<br/><br/>Fast forward to the present, we have been happily together for the past 18 months and 11 days. We are looking forward to bigger and more exciting plans for 2016 and 2017 as we look to crossover into our next phase of life together and hopefully settle down in our own lovely nest!<br/><br/>You guys provided a great platform for meeting sincere friends. Thank you Paktor for allowing us to have the chance to meet and fall in love!"
-        tw:"We first came across and \"\"Liked\"\" each other on Paktor in April 2014. After exchanging messages on Paktor for a while, we eventually exchanged phone numbers and began to text and call each other. I then plucked up my courage and asked her out to our first date on 3rd May 2014 to watch Show Luo's concert together with me. My heart was pounding out of my chest on that fateful day and I remember vividly that the first thing she ever said to me was \"\"Little boy\"\" as I was carrying a backpack with a Mickey Mouse plushie keychain.<br/><br/>Many dates proceeded thereafter and we officially got together on her birthday, 14th August 2014. It was one of the happiest moments of my life.<br/><br/>Fast forward to the present, we have been happily together for the past 18 months and 11 days. We are looking forward to bigger and more exciting plans for 2016 and 2017 as we look to crossover into our next phase of life together and hopefully settle down in our own lovely nest!<br/><br/>You guys provided a great platform for meeting sincere friends. Thank you Paktor for allowing us to have the chance to meet and fall in love!"
+        tw:"2014年4月，我們在Paktor上初次相遇並且「喜歡」對方。在Paktor互傳訊息一陣子之後，我們終於交換了電話號碼，開始傳簡訊甚至打電話。<br/>不久之後，我鼓起勇氣約她一起去看羅志祥2014年5月3號的演唱會。當天我的心跳跳得超快，而且我深深記得她見到我說的第一句話是：「小孩男！」因為我當天背了一個後背包出門，上面還掛了一個米老鼠娃娃的鑰匙圈。<br/><br/>之後我們約會了好幾次，並且在她生日那天正式在一起，就是2014年8月14號。這真的是我人生中最快樂的時刻！<br/><br/>直到今天，我們已經幸福地共度了18個月又11天。我們期待在2016以及2017有更長遠及令人興奮的計畫，我們正規劃要走進人生的下一個階段，希望可以共築我們愛的小窩！<br/><br/>你們真的提供了一個很棒的交友平台。謝謝Paktor讓我們能相遇且相愛！"
       }
     }
     {
