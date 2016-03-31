@@ -44,5 +44,9 @@ angular.module('PaktorApp')
     }).state('download', {
       url: '/download'
       templateUrl: 'view/ko/download.html'
-    })
+    }).state('stories', {
+    url: '/stories'
+    templateUrl: 'view/ko/stories.html'
+  })
+
 

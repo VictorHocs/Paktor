@@ -1,0 +1,40 @@
+<div class="jumbotron" style="padding-bottom: 0px;" ng-controller="ModalVideoCtrl as video">
+    <div class="container" ng-controller="StoryCtrl">
+        <div class="row" style="margin-bottom: 60px;">
+            <h1 class="text-center" style="font-size: 40px;padding: 0 0 7px;margin-top: 0px;">우리의 성공 이야기</h1>
+            <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s)">
+                <div class="card {{s.country}}">
+                    <img ng-src="../../img/parters/{{s.index}}.1.jpg" class="img-circle" alt="">
+                    <div>
+                        {{s.story.ko.substr(0,70)}}...
+                    </div>
+                    <p ng-bind-html="s.name.ko"></p>
+                    <a href="javascript:void(0);" ng-click="video.open()">더 읽기</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/ng-template" id="myModalContent.html">
+            <div style="position: relative;">
+        <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
+              style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
+                <div class="success-story-dialog">
+                    <img ng-src="../../img/parters/{{currentStory.index}}.2.jpg" alt="" class="pull-left" style="margin-right: 25px;">
+                    <div style="padding-top: 25px;">
+                        <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" class="pull-left img-circle" alt="" style="margin-right: 20px;width: 140px;height: 140px;">
+                        <p ng-bind-html="currentStory.name.ko" style="font-size: 30px;color: grey;padding: 30px;"></p>
+                        <div ng-bind-html="currentStory.story.ko">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+    </div>
+</div>
+<div class="container-fruit navbar-fixed-bottom">
+    <div class="story_start">
+        <h1 style="font-size: 30px;margin-top: 0px;padding: 20px 0 0px 0;">당신은 어떠신가요?</h1>
+        <p style="font-size: 16px;">당신의 아름다운 사랑이야기를 팍토르와 나눠보세요!</p>
+        <a href="https://form.jotform.me/60271263382451" target="_blank">시작하기!</a>
+    </div>
+</div>
+
