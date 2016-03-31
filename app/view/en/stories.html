@@ -3,7 +3,7 @@
         <div class="row" style="margin-bottom: 60px;">
             <h1 class="text-center" style="font-size: 40px;padding: 0 0 7px;margin-top: 0px;">Our successful stories</h1>
             <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s)">
-                <div class="card {{s.name.en.split('<')[0]}}">
+                <div class="card {{s.country}}">
                     <img ng-src="../../img/parters/{{s.index}}.1.jpg" class="img-circle" alt="">
                     <div>
                         {{s.story.en.substr(0,70)}}...
