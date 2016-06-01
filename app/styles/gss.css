@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'BrandonText-Black';
+    src: url('../fonts/BrandonText-Black.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'BrandonText-Medium';
+    src: url('../fonts/BrandonText-Medium.otf') format("opentype");
+}
+
+body {
+    font-family: BrandonText-Medium;
+}
+
+.gss-container {
+    width: 600px;
+    padding: 0;
+}
+
+.content {
+    padding: 10px 50px 30px 50px;
+    background: url("../img/09.png") no-repeat;
+}
+
+.h1_more {
+    font-family: BrandonText-Black;
+    font-size: 25px;
+    color: #46adbf;
+}
+
+.ad{
+    margin: 30px;
+}
+
+.ad img{
+    cursor: pointer;
+}
