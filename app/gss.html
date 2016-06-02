@@ -15,9 +15,9 @@
 
     <link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
-<body>
-<div class="container gss-container">
-    <div class="  text-center">
+<body ng-app="PaktorApp">
+<div class="container gss-container" ng-controller="ModalCtrl as video">
+    <div class="text-center">
         <img src="img/10.jpg" class="img-responsive" alt="">
 
         <div class="content">
@@ -26,23 +26,38 @@
             Zalora, Vaniday, Car Club and more!
 
             <div class="row ad">
-                <div class="col-xs-6"><img src="img/11.png" alt=""></div>
-                <div class="col-xs-6"><img src="img/12.png" alt=""></div>
+                <div class="col-xs-6"><img src="img/11.png" ng-click="video.open('18.jpg','http://bit.ly/carclubsg')" alt="">
+                </div>
+                <div class="col-xs-6"><img src="img/12.png" ng-click="video.open('21.jpg','http://bit.ly/1XVaU8W')" alt=""></div>
             </div>
             <div class="row ad">
-                <div class="col-xs-6"><img src="img/13.png" alt=""></div>
-                <div class="col-xs-6"><img src="img/14.png" alt=""></div>
+                <div class="col-xs-6"><img src="img/13.png" ng-click="video.open('22.jpg','http://bit.ly/hipvangss')" alt=""></div>
+                <div class="col-xs-6"><img src="img/14.png" ng-click="video.open('23.jpg','http://bit.ly/redmartgss')" alt=""></div>
             </div>
             <div class="row ad">
-                <div class="col-xs-6"><img src="img/15.png" alt=""></div>
-                <div class="col-xs-6"><img src="img/16.png" alt=""></div>
+                <div class="col-xs-6"><img src="img/15.png" ng-click="video.open('24.jpg','www.shopback.sg/paktor')" alt=""></div>
+                <div class="col-xs-6"><img src="img/16.png" ng-click="video.open('19.jpg','http://bit.ly/vanidaysg')" alt=""></div>
             </div>
             <div class="row ad">
-                <div class="col-xs-12"><img src="img/17.png" alt=""></div>
+                <div class="col-xs-12"><img src="img/17.png" ng-click="video.open('20.jpg','http://goo.gl/x1SA1j')" alt=""></div>
             </div>
         </div>
-
+        <script type="text/ng-template" id="myModalContent.html">
+            <div style="position: relative;">
+                <span ng-click="instance.close()" class="glyphicon glyphicon-remove"
+                      style="cursor: pointer;position: absolute;z-index: 100;right: 15px;font-size: 25px;top: 15px;background: white;border-radius: 50%;color: red;"></span>
+                <a target="_blank" href="{{link}}"><img ng-src="img/{{url}}" alt=""></a>
+            </div>
+        </script>
     </div>
 </div>
+<!--[if lt IE 9]>
+<script src="vendor/es5-shim/es5-shim.min.js"></script>
+<script src="vendor/json3/lib/json3.min.js"></script>
+<![endif]-->
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/angular-animate/angular-animate.js"></script>
+<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="scripts/gss.js"></script>
 </body>
 </html>
