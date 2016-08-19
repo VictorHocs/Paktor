@@ -21,8 +21,8 @@ angular.module('PaktorApp')
       url: '/blog'
       templateUrl: 'view/vi/blog.html'
     }).state('gaigai', {
-      url: '/gaigai'
-      templateUrl: 'view/vi/gaigai.html'
+      url: '/prime'
+      templateUrl: 'view/vi/prime.html'
     }).state('career', {
       url: '/career'
       templateUrl: 'view/vi/career.html'
