@@ -163,6 +163,8 @@ module.exports = function (grunt) {
                         'app/vendor/angular-animate/angular-animate.js',
                         'app/vendor/angular-bootstrap/ui-bootstrap-tpls.js',
                         'app/vendor/angular-ui-router/release/angular-ui-router.js',
+                        'app/vendor/angulartics/src/angulartics.js',
+                        'app/vendor/angulartics-facebook-pixel/dist/angulartics-facebook-pixel.min.js',
                         'app/vendor/ng-ScrollSpy.js/src/ng-ScrollSpy.js',
                         'app/vendor/angular-retina/build/angular-retina.js',
                         "app/vendor/jquery/dist/jquery.js",

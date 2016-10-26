@@ -1,5 +1,5 @@
 angular.module('PaktorApp',
-  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy','ngSanitize'])
+  ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngScrollSpy', 'ngSanitize', 'angulartics.facebook.pixel'])
 .run(($rootScope, $window)->
   angular.element($window).on 'resize scroll', ->
     $rootScope.$broadcast 'resize'
