@@ -7,6 +7,11 @@ angular.module('PaktorApp',
 .config(($locationProvider)->
 #  $locationProvider.html5Mode true
 )
+.controller('DownloadCtrl', ($scope)->
+  $scope.download = ->
+    $scope.showStore = true
+    fbq 'track', 'download'
+)
 .controller('ModalVideoCtrl', ($uibModal)->
   @open = ->
     $uibModal.open

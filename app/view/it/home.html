@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<div id="p1" data-scrollspy-broadcast class="jumbotron">
+<div id="p1" data-scrollspy-broadcast class="jumbotron"  ng-controller="DownloadCtrl">
     <div class="container ">
         <div class="row">
             <div class="col-md-5 col-md-offset-2">
@@ -33,7 +33,7 @@
 
                 <div style="height: 170px;margin-top: 40px;">
                     <button type="button"
-                            class="btn btn-default btn1" ng-show="!showStore" ng-click="showStore=true">
+                            class="btn btn-default btn1" ng-show="!showStore" ng-click="download()">
                         INSTALLA ADESSO
                     </button>
                     <div class="link-store" ng-show="showStore">

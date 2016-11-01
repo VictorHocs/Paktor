@@ -4,7 +4,12 @@
     return angular.element($window).on('resize scroll', function() {
       return $rootScope.$broadcast('resize');
     });
-  }).config(function($locationProvider) {}).controller('ModalVideoCtrl', function($uibModal) {
+  }).config(function($locationProvider) {}).controller('DownloadCtrl', function($scope) {
+    return $scope.download = function() {
+      $scope.showStore = true;
+      return fbq('track', 'download');
+    };
+  }).controller('ModalVideoCtrl', function($uibModal) {
     this.open = function() {
       return $uibModal.open({
         templateUrl: 'myModalContent.html',
