@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Aver;
+    src:  url('../fonts/Aver.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BrandonText-Regular';
+    src: url('../fonts/BrandonText-Regular_2.otf') format("opentype");
+}
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    background-color: rgba(0,0,0,0)
+}
+
+.person{
+    background: #00aab9;
+    text-align: center;
+}
+.person img{
+    width: 80%;
+    padding: 50px 0 50px 0;
+}
+p.title {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    font-size: 17px;
+    text-align: center;
+    font-family: Aver, "Times New Roman", Georgia, Serif;
+    font-style: italic;
+    color: #70738c;
+
+}
+p.description {
+    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 14px;
+    text-align: center;
+    font-family: BrandonText-Regular, Arial, Sans-serif;
+    font-style: normal;
+    color: #898a9e;
+}
