@@ -3,7 +3,95 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="styles/animations.css">
+    <style>
+        @font-face {
+            font-family: Aver;
+            src:  url('fonts/Aver.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'BrandonText-Regular';
+            src: url('fonts/BrandonText-Regular_2.otf') format("opentype");
+        }
+
+        body {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0;
+            background-color: rgba(0,0,0,0)
+        }
+
+        img{
+            width: 50%;
+            float: left;
+            opacity: 0;
+        }
+
+        p.title {
+            margin-top: 16px;
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-bottom: 16px;
+            font-size: 17px;
+            text-align: center;
+            font-family: Aver, "Times New Roman", Georgia, Serif;
+            font-style: italic;
+            color: #70738c;
+
+        }
+        p.description {
+            margin-bottom: 24px;
+            margin-left: 16px;
+            margin-right: 16px;
+            font-size: 14px;
+            text-align: center;
+            font-family: BrandonText-Regular, Arial, Sans-serif;
+            font-style: normal;
+            color: #898a9e;
+        }
+
+        @keyframes fade-in
+        {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @-moz-keyframes fade-in
+        {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @-webkit-keyframes fade-in
+        {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @-o-keyframes fade-in
+        {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        .a1,.a2,.a3,.a4{
+            animation: 1s fade-in;
+            animation-fill-mode: forwards;
+            -webkit-animation: 1s fade-in;
+            -webkit-animation-fill-mode: forwards;
+        }
+
+        .a2{
+            animation-delay: 1s;
+            -webkit-animation-delay: 1s;
+        }
+        .a3{
+            animation-delay: 2s;
+            -webkit-animation-delay: 2s;
+        }
+        .a4{
+            animation-delay: 3s;
+            -webkit-animation-delay: 3s;
+        }
+    </style>
     <title>Animations</title>
 </head>
 <body>
