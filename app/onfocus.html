@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>window.onfocus</title>
+</head>
+<body>
+<div id="msg"></div>
+<div id="msgList"></div>
+<script>
+    var msg = document.getElementById('msg')
+    var msgList = document.getElementById('msgList')
+    window.onpageshow = function () {
+        var temp = msg.cloneNode()
+        temp.append('onpageshow:', new Date())
+        msgList.appendChild(temp)
+    }
+    window.onfocus = function () {
+        var temp = msg.cloneNode()
+        temp.append('onfocus:', new Date())
+        msgList.appendChild(temp)
+    }
+    window.onshow = function () {
+        var temp = msg.cloneNode()
+        temp.append('onshow:', new Date())
+        msgList.appendChild(temp)
+    }
+    window.onplay = function () {
+        var temp = msg.cloneNode()
+        temp.append('onplay:', new Date())
+        msgList.appendChild(temp)
+    }
+</script>
+</body>
+</html>
