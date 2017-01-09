@@ -12,6 +12,8 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     padding: 0;
+    background: #a80045;
+    height:740px;
 }
 .bg{
     background: url("../img/cny.png");
