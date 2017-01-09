@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'BrandonText-Bold';
+    src: url('../fonts/BrandonText-Bold.otf') format("opentype");
+}
+@font-face {
+    font-family: 'Aver Bold Italic';
+    src: url('../fonts/Aver Bold Italic.ttf') format("opentype");
+}
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+}
+.bg{
+    background: url("../img/cny.png");
+    background-size: contain;
+    min-height: 740px;
+    color: #ffc565;
+    text-align: center;
+    padding: 2px 10px;
+}
+h1,h3{
+    font-family: BrandonText-Bold, "Times New Roman", Georgia, Serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h1{
+    margin-bottom: 5px;
+    margin-top: 28px;
+}
+h3{
+    margin-top: 12px;
+    font-size: 20px;
+}
+p{
+    font-family: "Aver Bold Italic", "Times New Roman", Georgia, Serif;
+}
