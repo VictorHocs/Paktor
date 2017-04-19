@@ -12,6 +12,12 @@ angular.module('PaktorApp',
     $scope.showStore = true
     fbq 'track', 'download'
 )
+.controller('StoreCtrl', ($scope)->
+  inBrowser = typeof window != 'undefined' and Object::toString.call(window) != '[object Object]'
+  UA = inBrowser and window.navigator.userAgent.toLowerCase()
+  $scope.isIOS = UA and /iphone|ipad|ipod|ios/.test(UA)
+  $scope.isAndroid = UA and UA.indexOf('android') > 0
+)
 .controller('ModalVideoCtrl', ($uibModal)->
   @open = ->
     $uibModal.open

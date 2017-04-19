@@ -9,6 +9,12 @@
       $scope.showStore = true;
       return fbq('track', 'download');
     };
+  }).controller('StoreCtrl', function($scope) {
+    var UA, inBrowser;
+    inBrowser = typeof window !== 'undefined' && Object.prototype.toString.call(window) !== '[object Object]';
+    UA = inBrowser && window.navigator.userAgent.toLowerCase();
+    $scope.isIOS = UA && /iphone|ipad|ipod|ios/.test(UA);
+    return $scope.isAndroid = UA && UA.indexOf('android') > 0;
   }).controller('ModalVideoCtrl', function($uibModal) {
     this.open = function() {
       return $uibModal.open({
