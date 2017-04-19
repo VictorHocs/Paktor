@@ -22,7 +22,7 @@
 
 <div ng-controller="StoreCtrl">
 
-    <div style="background: #e9e9e9" ng-if="isIOS">
+    <div style="background: #e9e9e9" ng-show="isIOS" class="ng-hide">
         <div style="padding: 12px;color: grey;font-size: 12px;">
             <a class="pull-right" href="https://itunes.apple.com/sg/app/paktor-chat-friends-meet-new/id654972611?mt=1"
                target="_blank">
@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div style="background: #e9e9e9" ng-if="isAndroid">
+    <div style="background: #e9e9e9" ng-show="isAndroid" class="ng-hide">
         <div style="padding: 12px;color: grey;font-size: 12px;">
             <a class="pull-right" href="https://play.google.com/store/apps/details?id=com.paktor&amp;referrer=utm_source%3Dgopaktor_com%26utm_medium%3Dhome_page%26utm_campaign%3Dplaystore_button"
                target="_blank">
