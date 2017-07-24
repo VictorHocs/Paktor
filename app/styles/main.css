@@ -545,3 +545,10 @@ img.paktor {
 }
 
 /*responsive design end */
+
+/*libs start */
+.our-labs .carousel-inner {
+    padding: 40px 0 60px 0;
+    background: #ebeef4;
+}
+/*libs end */

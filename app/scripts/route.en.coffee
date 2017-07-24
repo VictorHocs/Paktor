@@ -51,5 +51,8 @@ angular.module('PaktorApp')
     }).state('stories', {
       url: '/stories'
       templateUrl: 'view/en/stories.html'
-    })
+    }).state('labs', {
+    url: '/labs'
+    templateUrl: 'view/en/labs.html'
+  })
 
