@@ -79,6 +79,7 @@ body {
     font-family: 'Brandon Text Medium';
     font-weight: bold;
     color: white;
+    padding: 10px 22px;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a.focus {
