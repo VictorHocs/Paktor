@@ -375,6 +375,17 @@ a.email{
     font-family: BrandonText-Bold;
     letter-spacing: 3px;
 }
+
+.staff .col-md-4{
+    padding: 30px 0 30px 0;
+}
+.staff .col-md-4 img{
+    width: 70%;
+}
+.staff h3{
+    font-family: 'Aver Bold';
+    font-size: 18px;
+}
 /*override start*/
 .carousel-control.left, .carousel-control.right {
     background: none;
