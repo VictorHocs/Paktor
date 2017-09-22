@@ -257,9 +257,9 @@ p.introduce{
 }
 
 .btn1:hover{
-    background-color: #49e2b7;
+    background-color: #46c8a8;
     color: white;
-    border: 2px solid #49e2b7;
+    border: 2px solid #46c8a8;
 }
 
 .btn {
@@ -385,6 +385,7 @@ a.email{
 .staff h3{
     font-family: 'Aver Bold';
     font-size: 18px;
+    color: black;
 }
 /*override start*/
 .carousel-control.left, .carousel-control.right {
@@ -552,7 +553,8 @@ img.paktor {
     .carousel-control .glyphicon-chevron-right,
     .carousel-control .icon-prev,
     .carousel-control .icon-next {
-        font-size: 20px;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.42);
     }
 }
 
