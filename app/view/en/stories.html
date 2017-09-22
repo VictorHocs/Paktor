@@ -1,15 +1,38 @@
-<div class="jumbotron" style="padding-bottom: 0px;" ng-controller="ModalVideoCtrl as video">
+<div class="jumbotron" id="content" style="padding-top:100px;padding-bottom: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 style="font-size:60px;">Our Success Stories </h1>
+                <p style=" padding-top:20px; font-size:24px;font-family:'BrandonText-Thin_0'; font-weight:900; margin-bottom: 0.5px;">
+                    Did your romance happen at Paktor? Share it with us!
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4" style="padding-top: 60px;">
+                <a target="_blank" href="https://form.jotform.me/60248340267453">
+                    <button type="button" class="btn btn-default btn1">
+                        SUBMIT YOUR STORY
+                    </button>
+                </a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<div style="padding-bottom: 0px;" ng-controller="ModalVideoCtrl as video">
     <div class="container" ng-controller="StoryCtrl">
         <div class="row" style="margin-bottom: 60px;">
-            <h1 class="text-center" style="font-size: 40px;padding: 0 0 7px;margin-top: 0px;">Our Success Stories</h1>
-            <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s)">
+            <h1 class="text-center" style="font-size: 40px;padding: 70px 0 7px;margin-top: 0px;">Testimonials</h1>
+            <p class="text-center" style="font-size: 18px;">See what these couples has to share about their love story and how it begun in Paktor!</p>
+            <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s);video.open()">
                 <div class="card {{s.country}}">
-                    <img ng-src="../../img/parters/{{s.index}}.1.jpg" class="img-circle" alt="">
-                    <div>
-                        {{s.story.en.substr(0,70)}}...
-                    </div>
+                    <img ng-src="../../img/parters/{{s.index}}.1.jpg"  alt="">
                     <p ng-bind-html="s.name.en"></p>
-                    <a href="javascript:void(0);" ng-click="video.open()">READ MORE</a>
+                    <!--<a href="javascript:void(0);" ng-click="video.open()">READ MORE</a>-->
                 </div>
             </div>
         </div>
@@ -17,11 +40,12 @@
             <div style="position: relative;">
         <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
               style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
-                <div class="success-story-dialog">
-                    <img ng-src="../../img/parters/{{currentStory.index}}.2.jpg" alt="" class="pull-left" style="margin-right: 25px;">
-                    <div style="padding-top: 25px;">
-                        <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" class="pull-left img-circle" alt="" style="margin-right: 20px;width: 140px;height: 140px;">
-                        <p ng-bind-html="currentStory.name.en" style="font-size: 30px;color: grey;padding: 30px;"></p>
+                <div class="success-story-dialog" style="display: flex;padding: 40px 30px 30px 30px;">
+                    <div>
+                        <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" alt=""  style="margin-right: 25px;border-radius: 15px;">
+                    </div>
+                    <div >
+                        <p ng-bind-html="currentStory.name.en" style="font-size: 18px;font-family: 'Aver Bold';"></p>
                         <div ng-bind-html="currentStory.story.en">
                         </div>
                     </div>
@@ -30,11 +54,5 @@
         </script>
     </div>
 </div>
-<div class="container-fruit navbar-fixed-bottom">
-    <div class="story_start">
-        <h1 style="font-size: 30px;margin-top: 0px;padding: 20px 0 0px 0;">How about you?</h1>
-        <p style="font-size: 16px;">Share your beautiful stories with Paktor!</p>
-        <a href="https://form.jotform.me/60248340267453" target="_blank">START NOW!</a>
-    </div>
-</div>
+
 

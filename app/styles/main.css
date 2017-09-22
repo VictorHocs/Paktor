@@ -102,19 +102,25 @@ body {
 
 .card{
     padding: 15px 10px 5px 10px;
-    color: white;
+    /*color: white;*/
     font-size: 12px;
     text-align: center;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .card img{
-    width: 80px;
-    height: 80px;
-    margin: 0 0 22px 0;
+    width: 200px;
+    height: 200px;
+    margin: 0 0 15px 0;
+    border-radius: 15px;
 }
 
-.card p{margin: 10px;font-size: 18px;}
+.card p {
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Aver Bold';
+}
 
 
 .card a {
@@ -127,19 +133,22 @@ body {
     margin: 25px auto 5px auto;
     width: 180px;
 }
+.modal-content{
+    border-radius: 15px;
+}
 
 .Singapore{
-    background: #fb6a6f;
+    /*background: #fb6a6f;*/
 }
 .Vietnam{
-    background: #7160b7;
+    /*background: #7160b7;*/
 }
 .Malaysia{
-    background: #fdd277;
-    color: black;
+    /*background: #fdd277;*/
+    /*color: black;*/
 }
 .Indonesia{
-    background: #3b83a6;
+    /*background: #3b83a6;*/
 }
 
 .story_start{
