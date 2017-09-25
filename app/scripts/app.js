@@ -42,7 +42,7 @@
         index: 5,
         country: 'Vietnam',
         name: {
-          en: 'Vietnam <br/> Thi & Dong ',
+          en: 'Thi & Dong <br>-Vietnam ',
           ko: '베트남 - 티 & 동 (부부)',
           tw: '越南 <br/> Thi & Dong (結婚)'
         },
@@ -55,7 +55,7 @@
         index: 1,
         country: 'Singapore',
         name: {
-          en: 'Singapore <br/> Bryan & Venessa ',
+          en: ' Bryan & Venessa <br>-Singapore',
           ko: "싱가포르에서 - 브라이언 & 바네사 (연인)",
           tw: '新加坡 <br/> Bryan & Vanessa (熱戀中)'
         },
@@ -68,7 +68,7 @@
         index: 15,
         country: 'Indonesia',
         name: {
-          en: 'Indonesia <br/> Mariana & Christian ',
+          en: ' Mariana & Christian <br>-Indonesia ',
           ko: "인도네시아 - 마리아나 & 크리스찬 (연인)",
           tw: '印尼 <br/> Mariana & Christian (熱戀中)'
         },
@@ -81,7 +81,7 @@
         index: 9,
         country: 'Malaysia',
         name: {
-          en: 'Malaysia <br/> Emily & Partner ',
+          en: ' Emily & Partner <br>-Malaysia',
           ko: "말레이시아 - 에밀리 & 남친 (연인)",
           tw: '馬來西亞 <br/> Emily & 她的另一半 (熱戀中)'
         },
@@ -94,7 +94,7 @@
         index: 2,
         country: 'Singapore',
         name: {
-          en: 'Singapore <br/> Tricia & Mathew ',
+          en: ' Tricia & Mathew <br>-Singapore',
           ko: "싱가포르 - 트리시아 & 매튜 (연인)",
           tw: '新加坡 <br/> Tricia & Mathew (熱戀中)'
         },
@@ -107,7 +107,7 @@
         index: 10,
         country: 'Malaysia',
         name: {
-          en: 'Malaysia <br/> Eva & Boyfriend ',
+          en: ' Eva & Boyfriend <br>-Malaysia ',
           ko: "말레이시아 - 에바 & 남친 (연인)",
           tw: '馬來西亞 <br/> Eva & 她的男友 (熱戀中)'
         },
@@ -120,7 +120,7 @@
         index: 6,
         country: 'Vietnam',
         name: {
-          en: 'Vietnam <br/> San & Hai ',
+          en: '  San & Hai <br> -Vietnam ',
           ko: "베트남 - 산 & 하이 (연인)",
           tw: '越南 <br/> San & Hal (熱戀中)'
         },
@@ -133,7 +133,7 @@
         index: 16,
         country: 'Indonesia',
         name: {
-          en: 'Indonesia <br/> Vania & Aldo ',
+          en: '  Vania & Aldo <br/>-Indonesia',
           ko: "인도네시아 - 바니아 & 알도 (연인)",
           tw: '印尼 <br/> Vania & Aldo (熱戀中)'
         },
@@ -146,7 +146,7 @@
         index: 17,
         country: 'Indonesia',
         name: {
-          en: 'Indonesia <br/> Leonardi & Sheirine ',
+          en: '  Leonardi & Sheirine<br/> -Indonesia',
           ko: "인도네시아 - 레오나르디 & 쉐린 (연인)",
           tw: '印尼 <br/> Leonardi & Sheirine (熱戀中)'
         },
@@ -159,7 +159,7 @@
         index: 7,
         country: 'Vietnam',
         name: {
-          en: 'Vietnam <br/> Hang & Long ',
+          en: '  Hang & Long <br/>-Vietnam',
           ko: "베트남 - 항 & 롱 (연인)",
           tw: '越南 <br/> Hang & Long (熱戀中)'
         },
@@ -172,7 +172,7 @@
         index: 3,
         country: 'Singapore',
         name: {
-          en: 'Singapore <br/> Iris & Boyfriend ',
+          en: ' Iris & Boyfriend  <br/>-Singapore',
           ko: "싱가포르 - 아이리스 & 남친 (연인)",
           tw: '新加坡 <br/> Iris & 她的男友 (熱戀中)'
         },
@@ -185,7 +185,7 @@
         index: 11,
         country: 'Malaysia',
         name: {
-          en: 'Malaysia <br/> Yvone & Boyfriend ',
+          en: '  Yvone & Boyfriend <br/>-Malaysia',
           ko: "말레이시아 - 이본 & 남친 (연인)",
           tw: '馬來西亞 <br/> Yvone & 她的男友 (熱戀中)'
         },
@@ -198,7 +198,7 @@
         index: 8,
         country: 'Vietnam',
         name: {
-          en: 'Vietnam <br/> Duc & Linh ',
+          en: '  Duc & Linh <br/>-Vietnam',
           ko: "",
           tw: '越南 <br/> Duc & Linh (熱戀中)'
         },
@@ -211,7 +211,7 @@
         index: 12,
         country: 'Malaysia',
         name: {
-          en: 'Malaysia <br/> Shiyu & Partner ',
+          en: '  Shiyu & Partner<br/> -Malaysia',
           ko: "말레이시아 - 시유 & 남친 (연인)",
           tw: '馬來西亞 <br/> Shiyu & 她的夥伴 (熱戀中)'
         },
@@ -224,7 +224,7 @@
         index: 4,
         country: 'Singapore',
         name: {
-          en: 'Singapore <br/> Avian & Boyfriend ',
+          en: '  Avian & Boyfriend <br/>-Singapore',
           ko: "싱가포르 - 애비앙 & 남친 (연인)",
           tw: '新加坡 <br/> Avian & 她的男友 (熱戀中)'
         },
@@ -237,7 +237,7 @@
         index: 13,
         country: 'Malaysia',
         name: {
-          en: 'Malaysia <br/> Jamie & Girlfriend ',
+          en: ' Jamie & Girlfriend <br/> -Malaysia',
           ko: "말레이시아 - 제이미 & 여친 (연인)",
           tw: '馬來西亞 <br/> Jamie & 他的女友 (熱戀中)'
         },
@@ -250,7 +250,7 @@
         index: 14,
         country: 'Malaysia',
         name: {
-          en: 'Malaysia <br/> Jake & Girlfriend ',
+          en: '  Jake & Girlfriend <br/>-Malaysia',
           ko: "말레이시아 - 제이크 & 여친 (연인)",
           tw: '馬來西亞 <br/> Jake & 他的女友 (熱戀中)'
         },
@@ -263,7 +263,7 @@
         index: 18,
         country: 'Singapore',
         name: {
-          en: 'Singapore <br/> Heng & Fiancé ',
+          en: ' Heng & Fiancé <br/> -Singapore',
           ko: "싱가포르 - 헹 & 약혼녀 (약혼)",
           tw: '新加坡 <br/> Heng & 他的未婚妻 (已訂婚)'
         },
