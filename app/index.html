@@ -10,6 +10,10 @@
   <script>
     $.getJSON('http://freegeoip.net/json/', function (l) {
       var country = l.country_name
+      if(!country){
+          window.location.href = 'index.en.html'
+      }
+
       if (country == 'Germany') {
         window.location.href = 'index.ge.html'
       } else if (country == 'Indonesia') {
@@ -25,8 +29,6 @@
       } else if (country == 'Thailand') {
         window.location.href = 'index.th.html'
       } else if (country == 'Vietnam' || country == 'Viet nam') {
-        window.location.href = 'index.vi.html'
-      } else if (country == 'Vietnam') {
         window.location.href = 'index.vi.html'
       } else if (country.indexOf('Taiwan') != -1 || country == 'China' || country.indexOf('Hong Kong') != -1) {
         window.location.href = 'index.zh.html'
