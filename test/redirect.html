@@ -28,6 +28,8 @@
         window.location.href = 'index.vi.html'
       } else if (country == 'Vietnam') {
         window.location.href = 'index.vi.html'
+      } else if (country.indexOf('Taiwan') != -1 || country == 'China' || country.indexOf('Hong Kong') != -1) {
+        window.location.href = 'index.zh.html'
       } else {
         window.location.href = 'index.html'
       }
@@ -36,6 +38,6 @@
   <title>Redirecting...</title>
 </head>
 <body>
-
+Redirecting...
 </body>
 </html>
