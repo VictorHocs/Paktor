@@ -20,9 +20,9 @@ angular.module('PaktorApp')
     }).state('blog', {
       url: '/blog'
       templateUrl: 'view/zh/blog.html'
-    }).state('gaigai', {
-      url: '/gaigai'
-      templateUrl: 'view/zh/gaigai.html'
+    }).state('paktorpremium', {
+      url: '/paktorpremium'
+      templateUrl: 'view/zh/paktorpremium.html'
     }).state('career', {
       url: '/career'
       templateUrl: 'view/zh/career.html'
