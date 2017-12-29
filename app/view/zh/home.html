@@ -59,23 +59,23 @@
         </div>
     </div>
 </div>
-<script type="text/ng-template" id="myModalContent.html">
-    <div style="position: relative;">
-        <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
-              style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
+<!--<script type="text/ng-template" id="myModalContent.html">-->
+    <!--<div style="position: relative;">-->
+        <!--<span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"-->
+              <!--style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>-->
 
-        <video style="width: 100%;" controls>
-            <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4"
-                    type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-</script>
+        <!--<video style="width: 100%;" controls>-->
+            <!--<source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4"-->
+                    <!--type="video/mp4">-->
+            <!--Your browser does not support HTML5 video.-->
+        <!--</video>-->
+    <!--</div>-->
+<!--</script>-->
 
-<div class="fullcontainer hidden-xs" ng-controller="ModalVideoCtrl as video">
-    <img ng-click="video.open()" src="img/video.png" class="img-responsive"
-         style="background-size:cover; width:100%;cursor: pointer;" alt="">
-</div>
+<!--<div class="fullcontainer hidden-xs" ng-controller="ModalVideoCtrl as video">-->
+    <!--<img ng-click="video.open()" src="img/video.png" class="img-responsive"-->
+         <!--style="background-size:cover; width:100%;cursor: pointer;" alt="">-->
+<!--</div>-->
 
 <video class="visible-xs" style="width: 100%;" controls>
     <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4"
@@ -110,7 +110,8 @@
 
                 <p class="t1 p2-left-start introduce p2-left-end" ng-class="{'p2-left-end':isIn}">
                     當有人也喜歡你，你就與他/她配對成功。
-                    Paktor 讓志同道合的人在一起.
+                    配對成功之後就趕快開啟對話，多聊天可讓感情迅速加溫！
+
                 </p>
             </div>
             <div class="col-md-5 text-center" style="overflow: hidden;">
@@ -128,7 +129,9 @@
                     </h2>
 
                 <p class="t1 p2-right-start introduce p2-right-end" ng-class="{'p2-right-end':isIn}">
-                    先採取行動者總是搶得先機。主動破冰，打破令人尷尬的沈默吧。</p>
+                    送個禮物來打破尷尬的僵局！
+                    培養共同話題是維繫感情的小技巧喲～
+                </p>
             </div>
             <div class="col-md-4 col-md-pull-3 text-center">
                 <img ng-src="img/phone3.png" width="338" height="647" class="img-responsive t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" alt="Responsive image">
@@ -155,7 +158,7 @@
 <div id="p7" data-scrollspy-broadcast class="jumbotron" style="background:#403f43;padding-bottom: 0px;">
     <div class="container">
         <div class="row" style="text-align:center;">
-            <div class="col-md-12"><h2 style="color:#6c6f7d; padding-bottom: 40px;font-size: 30px;">玩玩條件篩選，找到你的理想對象。</h2></div>
+            <div class="col-md-12"><h2 style="color:#6c6f7d; padding-bottom: 40px;font-size: 30px;">想趕快找到理想對象嗎？你該試試條件篩選！</h2></div>
         </div>
         <div class="row" style="text-align:center;">
             <div class="col-md-12">
