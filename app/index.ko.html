@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="styles/main.css">
 
+  <style>
+    .modal-lg{
+      width: fit-content !important;
+    }
+  </style>
+
   <link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
 <body ng-app="PaktorApp" debug-scope>
@@ -38,13 +44,13 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right" style="text-transform: uppercase;margin-top: 9px;">
         <li><a ui-sref-active="focus" data-ui-sref="home">홈</a></li>
-        <li><a ui-sref-active="focus" data-ui-sref="about">팍토르에 대하여</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="about">회사소개</a></li>
         <!--<li><a ui-sref-active="focus" data-ui-sref="blog">blog</a></li>-->
         <li><a ui-sref-active="focus" data-ui-sref="gaigai">가이가이</a></li>
-        <li><a ui-sref-active="focus" data-ui-sref="career">채용</a></li>
-        <li><a ui-sref-active="focus" data-ui-sref="contact">연락하기</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="career">채용안내</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="contact">문의하기</a></li>
         <!--<li><a ui-sref-active="focus" data-ui-sref="web_app">웹 어플리케이션</a></li>-->
-        <li><a ui-sref-active="focus" data-ui-sref="stories">추천 이야기</a></li>
+        <li><a ui-sref-active="focus" data-ui-sref="stories">스와이프 스토리</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -53,7 +59,7 @@
 
 <ui-view></ui-view>
 
-<div style="background: #7e70c1;">
+<div style="background: #3f91b2;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center" style="color: white;">
@@ -61,7 +67,7 @@
 					<a href="mailto:help@gopaktor.com"><img src="img/Mail.png" alt="#"/></a>
 					<a href="https://www.facebook.com/GoPaktor/"><img src="img/Facebook.png"/></a>
 					<a href="https://twitter.com/gopaktor"><img src="img/Twitter.png"></a>
-					<a href="https://www.youtube.com/user/PaktorAsiaLaunch"><img src="img/Youtube.png"></a>
+					<a href="https://www.youtube.com/channel/UCUFMtfHVHpsXSq8spluJ78g"><img src="img/Youtube.png"></a>
 				</div>
 				<div style="padding: 30px; font-family:'Brandon Text Medium'">
 					<a style="color:white; padding-right:20px;" ui-sref="download">앱 다운로드</a>

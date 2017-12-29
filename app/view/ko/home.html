@@ -22,16 +22,15 @@
     </div>
 </div>
 
-<div id="p1" data-scrollspy-broadcast class="jumbotron" ng-controller="DownloadCtrl">
+<div id="p1" data-scrollspy-broadcast class="jumbotron" ng-controller="DownloadCtrl"
+    style="background: #3f91b2;">
     <div class="container ">
         <div class="row">
             <div class="col-md-5 col-md-offset-2">
-                <img src="img/homepageword.png" class="paktor">
-
+                <span style="padding-top: 175px;font-size: 65px;display: block;font-weight: bold;">스와이프</span>
                 <h2 style="padding-top:20px;">
-                    새로운 친구를 만나는 신나는 시간
+                    연애의 시작!
                 </h2>
-
                 <div style="height: 170px;margin-top: 40px;">
                     <button type="button"
                             class="btn btn-default btn1" ng-show="!showStore" ng-click="download()">
@@ -60,15 +59,11 @@
     </div>
 </div>
 <script type="text/ng-template" id="myModalContent.html">
-    <div style="position: relative;">
+    <div style="position: relative;width: 600px;" >
         <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
               style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
 
-        <video style="width: 100%;" controls>
-            <source src="https://s3-ap-southeast-1.amazonaws.com/letsgaigai/PaktorAppInstructionNoIntro-English.mp4"
-                    type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ww6jtYidEsQ?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 </script>
 
@@ -87,16 +82,17 @@
     <div class="container" in-viewport="isIn2" delay="3000">
         <div class="row">
             <div class="col-md-5 col-md-push-7" style="overflow:hidden;">
-                <h2 class="t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" style="color:#464963;">왼쪽, 오른쪽, 왼쪽, 오른쪽??
+                <h2 class="t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" style="color:#464963;">
+                    초간단!
 
                     </h2>
 
                 <p class="t1 p2-right-start introduce p2-right-end" ng-class="{'p2-right-end':isIn}">
-                    화면을 좌우로 넘겨서 친구들을 만들어 보세요.
+                    마음에 들면 오른쪽! <br>
 
-                    맘에 든다 얘기해보고싶다!! 하면 오른쪽으로~
-
-                    음 그냥 그런데.. 하면 왼쪽으로~</p>
+                    패스하고 싶으면 왼쪽!
+                    <br><br>
+                </p>
             </div>
             <div class="col-md-4 col-md-pull-3 text-center">
                 <img ng-src="img/phone.png" width="338" height="647" class="img-responsive t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}"
@@ -109,11 +105,12 @@
     <div class="container" in-viewport="isIn2" delay="3000">
         <div class="row">
             <div class="col-md-5 col-md-offset-2">
-                <h2 class="t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" style="color:#464963;">"매칭!</h2>
+                <h2 class="t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" style="color:#464963;">매칭!</h2>
 
                 <p class="t1 p2-left-start introduce p2-left-end" ng-class="{'p2-left-end':isIn}">
-                    통했다!! 내가 좋아요 한 친구가 나에게도 좋아요를 하면 곧 짝을 이루게 됩니다.
-                    팍토르는 생각이 비슷한 사람들을 계속해서 연결해줍니다."
+                    서로 마음에 들면 매칭! <br>
+                    나의 이상형을 무료로 만나보세요!
+
                 </p>
             </div>
             <div class="col-md-5 text-center" style="overflow: hidden;">
@@ -127,13 +124,14 @@
     <div class="container" in-viewport="isIn2" delay="3000">
         <div class="row">
             <div class="col-md-5 col-md-push-7" style="overflow:hidden;">
-                <h2 class="t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" style="color:#464963;">"안녕하세요!</h2>
+                <h2 class="t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" style="color:#464963;">채팅!</h2>
 
                 <p class="t1 p2-right-start introduce p2-right-end" ng-class="{'p2-right-end':isIn}">
 
 
-                    조심스럽게 먼저 말을 걸어볼까?
-                    서로 편하게 이야기나누면서 친해져요."</p>
+                    서로 통했나요? <br>
+                    그럼 대화를 시작하세요!
+                </p>
             </div>
             <div class="col-md-4 col-md-pull-3 text-center">
                 <img ng-src="img/phone3.png" width="338" height="647" class="img-responsive t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" alt="Responsive image">
@@ -145,10 +143,12 @@
     <div class="container" in-viewport="isIn2" delay="3000">
         <div class="row">
             <div class="col-md-5 col-md-offset-2">
-                <h2 class="t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" style="color:#464963;">"선물과 문자를 보내요.</h2>
+                <h2 class="t1 p2-left-start p2-left-end" ng-class="{'p2-left-end':isIn}" style="color:#464963;">선물 보내기!</h2>
 
                 <p class="t1 p2-left-start introduce p2-left-end" ng-class="{'p2-left-end':isIn}">
-                    아직도 큐피트의 화살이 저절로 내게 와서 꽂히길 기다리나요?? 팍토르에서는 당신이 먼저 손을 내밀어 보세요."</p>
+                    마음에 드는 이성에게 선물을 보내보세요! <br>
+                    이성에게 쉽게 호감을 나타낼 수 있습니다.
+                </p>
             </div>
             <div class="col-md-5 text-center" style="overflow: hidden;">
                 <img ng-src="img/phone4.png" width="338" height="653" class="img-responsive t1 p2-right-start p2-right-end" ng-class="{'p2-right-end':isIn}" alt="Responsive image">
@@ -159,7 +159,7 @@
 <div id="p7" data-scrollspy-broadcast class="jumbotron" style="background:#403f43;padding-bottom: 0px;">
     <div class="container">
         <div class="row" style="text-align:center;">
-            <div class="col-md-12"><h2 style="color:#6c6f7d; padding-bottom: 40px;font-size: 30px;">더 완벽한 매칭을 위해 필터를 이용하세요.</h2></div>
+            <div class="col-md-12"><h2 style="color:#6c6f7d; padding-bottom: 40px;font-size: 30px;">필터를 이용하여 이상형을 만나보세요!</h2></div>
         </div>
         <div class="row" style="text-align:center;">
             <div class="col-md-12">
@@ -174,32 +174,31 @@
     <div class="container" style="padding-top:80px;padding-bottom:80px;">
         <div class="row">
             <div class="col-md-4 col-md-offset-1 tips">
-                <h2 style="color:#464963; ">유용한 팁!</h2>
+                <h2 style="color:#464963; ">프리미엄 멤버!</h2>
 
                 <p class="introduce">
 
-                    멤버십 가입을 통해 더 많은 혜택을 누리세요!</p>
+                    멤버십 가입으로 다양한 혜택을 누릴 수 있습니다.</p>
             </div>
             <div class="col-md-6 col-md-offset-1">
                 <ul class="list-unstyled list">
                     <li>
-                        <img src="img/message.png"> 누구에게나 메세지와 선물을 보내세요.
+                        <img src="img/message.png">  메세지와 선물 전송
                     </li>
                     <li>
-                        <img src="img/heart.png"> 누가 당신을 확인하고 좋아요했는지 확인해 보세요.
+                        <img src="img/heart.png"> 나를 좋아하는 사람 확인 기능
                     </li>
                     <li>
-                        <img src="img/lock.png"> 키나 직업 등을 공개하세요.
+                        <img src="img/lock.png"> 호감가는 이성의 상세한 정보 확인
                     </li>
                     <li>
-                        <img src="img/eye.png"> 다른사람 걱정없이 둘러보세요.
-                        누구도 당신의 행로를 알수 없어요.
+                        <img src="img/eye.png"> 지인 차단 기능
                     </li>
                     <li>
-                        <img src="img/clock.png"> 당신의 매칭을 위해 가장 최근의 접속을 볼 수 있습니다.
+                        <img src="img/clock.png"> 이성의 최근 접속일 확인
                     </li>
                     <li>
-                        <img src="img/circle.png"> 매일 1,000포인트를 채우세요.
+                        <img src="img/circle.png"> 매일 매일 1,000포인트.
                     </li>
                 </ul>
             </div>
