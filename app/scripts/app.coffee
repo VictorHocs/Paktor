@@ -3,6 +3,9 @@ angular.module('PaktorApp',
 .run(($rootScope, $window)->
   angular.element($window).on 'resize scroll', ->
     $rootScope.$broadcast 'resize'
+  $rootScope.$on '$stateChangeSuccess', ->
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
 )
 .config(($locationProvider)->
 #  $locationProvider.html5Mode true
