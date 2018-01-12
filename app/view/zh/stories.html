@@ -1,15 +1,38 @@
-<div class="jumbotron" style="padding-bottom: 0px;" ng-controller="ModalVideoCtrl as video">
+<div class="jumbotron" id="content" style="padding-top:150px;padding-bottom: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 style="font-size:60px;">我们的成功故事 </h1>
+                <p style=" padding-top:20px; font-size:20px;font-family:'BrandonText-Thin_0'; font-weight:900; margin-bottom: 0.5px;">
+                    跟Paktor 分享你那些美好的愛情故事吧！
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4" style="padding-top: 60px;">
+                <a target="_blank" href="https://form.jotform.me/60271451644451">
+                    <button type="button" class="btn btn-default btn1">
+                        現在開始！
+                    </button>
+                </a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<div style="padding-bottom: 0px;" ng-controller="ModalVideoCtrl as video">
     <div class="container" ng-controller="StoryCtrl">
         <div class="row" style="margin-bottom: 60px;">
-            <h1 class="text-center" style="font-size: 40px;padding: 0 0 7px;margin-top: 0px;">Paktor的成功故事</h1>
-            <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s)">
+            <h1 class="text-center" style="font-size: 40px;padding: 70px 0 7px;margin-top: 0px;">感言</h1>
+            <p class="text-center" style="font-size: 18px;">看这些情侣分享他们在Paktor上的爱情故事吧！</p>
+            <div class="col-lg-3" ng-repeat="s in stories" ng-click="changeStory(s);video.open()">
                 <div class="card {{s.country}}">
-                    <img ng-src="../../img/parters/{{s.index}}.1.jpg" class="img-circle" alt="">
-                    <div>
-                        {{s.story.tw.substr(0,70)}}...
-                    </div>
+                    <img ng-src="../../img/parters/{{s.index}}.1.jpg"  alt="">
                     <p ng-bind-html="s.name.tw"></p>
-                    <a href="javascript:void(0);" ng-click="video.open()">閱讀更多</a>
+                    <!--<a href="javascript:void(0);" ng-click="video.open()">READ MORE</a>-->
                 </div>
             </div>
         </div>
@@ -17,11 +40,12 @@
             <div style="position: relative;">
         <span ng-click="videoInstance.close()" class="glyphicon glyphicon-remove"
               style="cursor: pointer;position: absolute;z-index: 100;right: 10px;font-size: 25px;top: 10px;background: white;border-radius: 50%;"></span>
-                <div class="success-story-dialog">
-                    <img ng-src="../../img/parters/{{currentStory.index}}.2.jpg" alt="" class="pull-left" style="margin-right: 25px;">
-                    <div style="padding-top: 25px;">
-                        <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" class="pull-left img-circle" alt="" style="margin-right: 20px;width: 140px;height: 140px;">
-                        <p ng-bind-html="currentStory.name.tw" style="font-size: 30px;color: grey;padding: 30px;"></p>
+                <div class="success-story-dialog" style="display: flex;padding: 40px 30px 30px 30px;">
+                    <div>
+                        <img ng-src="../../img/parters/{{currentStory.index}}.1.jpg" alt=""  style="margin-right: 25px;border-radius: 15px;">
+                    </div>
+                    <div >
+                        <p ng-bind-html="currentStory.name.tw" style="font-size: 18px;font-family: 'Aver Bold';"></p>
                         <div ng-bind-html="currentStory.story.tw">
                         </div>
                     </div>
@@ -30,11 +54,7 @@
         </script>
     </div>
 </div>
-<div class="container-fruit navbar-fixed-bottom">
-    <div class="story_start">
-        <h1 style="font-size: 30px;margin-top: 0px;padding: 20px 0 0px 0;">你呢？</h1>
-        <p style="font-size: 16px;">跟Paktor 分享你那些美好的愛情故事吧！</p>
-        <a href="https://form.jotform.me/60271451644451" target="_blank">現在開始！</a>
-    </div>
-</div>
+
+
+
 
