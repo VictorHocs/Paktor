@@ -26,9 +26,9 @@
         We practice values that enable us to flourish and achieve our fullest potential.
 
         <br><br>
-        <a style="color: black;text-decoration: underline;font-family: 'BrandonText-Bold';"
-           target="_blank" href="https://business.facebook.com/media/set/?set=a.910488845771444.1073741859.206281072858895&type=1&l=f4121f79b7">
-          View Paktor’s Company Values</a>
+        <span style="color: black;text-decoration: underline;font-family: 'BrandonText-Bold';cursor: pointer;" ng-click="go('our_company_values')"
+           >
+          View Paktor’s Company Values</span>
       </p>
     </div>
     <div class="col-md-1">
@@ -40,7 +40,7 @@
       <p style="font-size: 16px;">
         Hear from actual experiences of our very own people on what exactly goes down in Paktor.
         <br><br>
-        <a style="color: black;text-decoration: underline;font-family: 'BrandonText-Bold';" target="_blank" href="https://business.facebook.com/media/set/?set=a.913219665498362.1073741861.206281072858895&type=1&l=4a1048efda">Read More</a>
+        <span style="color: black;text-decoration: underline;font-family: 'BrandonText-Bold';cursor: pointer;" ng-click="go('working_at_paktor')">Read More</span>
       </p>
     </div>
     <div class="col-md-1">
@@ -59,6 +59,7 @@
 </div>
 
 <div style="background: #ebeef4;text-align: center;padding: 30px 0 1px 0;" id="p4" data-scrollspy-broadcast>
+  <a id="our_company_values"></a>
   <h2 style="font-size: 45px;">Our Company Values</h2>
 </div>
 <uib-carousel class="our-values our-labs">
@@ -182,6 +183,7 @@
 <div style="background: #ebeef4;height: 50px;"></div>
 <div class="container">
   <div class="text-center" style="padding: 40px 0 20px 0;">
+    <a id="working_at_paktor"></a>
     <h1>Working at Paktor</h1>
     <h3 style="font-family: 'Aver Bold';font-size: 18px;"> What’s it like to work at Paktor?</h3>
     <p style="font-size: 16px;">See what our team has to say about the working environment and how things are run around here.</p>
