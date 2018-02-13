@@ -29,7 +29,11 @@ angular.module('PaktorApp')
       templateUrl: 'view/en/gaigai.html'
     }).state('career', {
       url: '/career'
-      templateUrl: 'view/en/career.html'
+      templateUrl: 'view/en/career.html',
+      controller: ($scope, $location, $anchorScroll)->
+        $scope.go = (hash) ->
+          $location.hash hash
+          $anchorScroll()
     }).state('contact', {
       url: '/contact'
       templateUrl: 'view/en/contact.html'
